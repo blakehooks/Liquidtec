@@ -19,6 +19,8 @@
 	case 5:
         echo 'seminars';
         break;
+	}
 ?>
-<?php // ends main_head ?>
+<?php // ends main_head and wrap ?>
+</div>
 </div>

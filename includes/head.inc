@@ -21,4 +21,5 @@ if($extra_head) {
 </head>
 <body>
 <div id="main_head">
+<div id="main_head_wrap">
 <a href="index.php" id="logo"></a>
