@@ -2,3 +2,24 @@ body {
 	font-family:tahoma;
 	background-color:#ebebeb;
 }
+#main_head {
+	background: #f8f8f8; /* Old browsers */
+	background: -moz-linear-gradient(top, #f8f8f8 52%, #ebebeb 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(52%,#f8f8f8), color-stop(100%,#ebebeb)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #f8f8f8 52%,#ebebeb 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #f8f8f8 52%,#ebebeb 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #f8f8f8 52%,#ebebeb 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #f8f8f8 52%,#ebebeb 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f8f8', endColorstr='#ebebeb',GradientType=0 ); /* IE6-9 */
+
+	-moz-box-shadow: 5px 5px 5px black;
+	-webkit-box-shadow: 5px 5px 5px black;
+	box-shadow: 5px 5px 5px black;
+}
+#logo {
+	border:none;
+	text-decoration:none;
+	background-image:url('images/logo.png');
+	width:324;
+	height:98;
+}

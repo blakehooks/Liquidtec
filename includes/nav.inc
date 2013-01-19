@@ -20,3 +20,5 @@
         echo 'seminars';
         break;
 ?>
+<?php // ends main_head ?>
+</div>

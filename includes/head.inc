@@ -20,3 +20,5 @@ if($extra_head) {
 ?>
 </head>
 <body>
+<div id="main_head">
+<a href="index.php" id="logo"></a>
