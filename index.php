@@ -1,3 +1,3 @@
 <?php
-echo "Hello Liquidtec! Does my Post Receieve magically work?";
+echo "Hello Liquidtec! Does my Post Receieve magically work now!?";
 ?>
