@@ -1,6 +1,6 @@
 <?php
 include('includes/head.inc');
-$extra_head = '<link rel="stylesheet" type="text/css" href="main_includes/style.css" />';
+$extra_head = '<link rel="stylesheet" type="text/css" href="includes/style.css" />';
 ?>
 <?php 
 $nav = 0;
