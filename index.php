@@ -1,3 +1,10 @@
 <?php
-echo "Hello Liquidtec! Does my Post Receieve magically work now!?!? PLEASE CRON I TRUST YOU";
+include('includes/head.inc');
+$extra_head = '<link rel="stylesheet" type="text/css" href="main_includes/style.css" />';
 ?>
+<?php 
+$nav = 0;
+include('includes/nav.inc'); 
+?>
+
+<?php include('includes/foot.inc');
