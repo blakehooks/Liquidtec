@@ -28,13 +28,12 @@ body {
 	margin-left:auto;
 }
 #logo {
-	border:none;
-	text-decoration:none;
+	margin-top:25px;
 	background-image:url('../images/logo.png');
 	display:block;
+	text-indent:-9999px;
 	width:324;
 	height:98;
-	margin-top:25px;
 }
 #nav {
 	float:left;

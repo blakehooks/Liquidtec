@@ -22,4 +22,4 @@ if($extra_head) {
 <body>
 <div id="main_head">
 <div id="main_head_wrap">
-<a href="index.php" id="logo"></a>
+<a href="index.php" title="Liquid Tec" id="logo">Liquid Tec</a>
