@@ -1,4 +1,5 @@
 <!-- nav -->
+<div id="nav">
 <?php
 	switch ($nav) {
     case 0:
@@ -21,6 +22,7 @@
         break;
 	}
 ?>
+</div>
 <?php // ends main_head and wrap ?>
 </div>
 </div>
