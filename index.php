@@ -7,7 +7,7 @@ $nav = 0;
 include('includes/nav.inc'); 
 ?>
 <div id="main_slide">
-<img src="images/mission.png" alt="Our Mission" />
+<img src="images/mission.png" alt="Our Mission" style="width:1100px; margin-left:2px; margin-right:2px; />
 <div id="slide_frame"></div>
 </div>
 
