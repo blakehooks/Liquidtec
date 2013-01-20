@@ -39,7 +39,8 @@ body {
 	text-indent:-9999px;
 }
 #nav {
-	font-family:30px 'RobotoLight', Tahoma, sans-serif;
+	font-family:'RobotoLight', Tahoma, sans-serif;
+	font-size:30pt;
 	color:#777777;
 	float:right;
 	width:665px;
