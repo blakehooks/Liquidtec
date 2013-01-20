@@ -46,6 +46,12 @@ From <span class="blue">educating</span> and <span class="blue">consulting</span
 			<span class="panel" id="create"></span>
 			<span class="ring"></span>
 			<span class="panel" id="diagnose"></span>
+			<!-- section 2 -->
+			<span class="panel" id="educate"></span>
+			<span class="ring"></span>
+			<span class="panel" id="create"></span>
+			<span class="ring"></span>
+			<span class="panel" id="diagnose"></span>
 		</div>
 	</div>
 	

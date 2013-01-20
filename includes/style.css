@@ -237,7 +237,8 @@ a.nav_items:active {
 	width:55px;
 	display:inline-block;
 	background-image:url('../images/ring.png');
-	vertical-align:middle;
+	position: relative;
+	top: -50px;
 }
 #educate {
 	background-image:url('../images/educate.png');
