@@ -64,10 +64,7 @@ a.nav_items:link, a.nav_items:visited{
 	text-decoration:none;
 	font-family:'RobotoLight', Tahoma, sans-serif;
 	font-size:22pt;
-	color:#777777;
-	background: -webkit-linear-gradient(#a6a6a6, #777777);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	color:rgb(162, 162, 162);
 }
 a.nav_items-b:link, a.nav_items-b:visited{
 	text-decoration:none;
@@ -285,9 +282,14 @@ a.nav_items:active {
 #foot_wrap {
 	width:1115px;
 	height:110px;
-	padding:5px;
 	margin-right:auto;
 	margin-left:auto;
+}
+#foot_watermark {
+	margin-top:25px;
+	margin-left:30px;
+	font-family:'RobotoLightItalic', Tahoma, sans-serif;
+	font-size:15pt;
 }
 
 
