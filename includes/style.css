@@ -106,7 +106,7 @@ a.nav_items:active {
 #slide_frame {
 	width:1150px;
 	height:67px;
-	background-image:url('../images/slide_frame');
+	background-image:url('../images/slide_frame.png');
 	position:absolute;
 	top:1083;
 	z-index:1
