@@ -39,10 +39,10 @@ body {
 	text-indent:-9999px;
 }
 #nav {
-	font: 24px 'RobotoLight', Tahoma, sans-serif;
+	font-family:30px 'RobotoLight', Tahoma, sans-serif;
+	color:#777777;
 	float:right;
-	margin-left:10px;
-	width:700px;
+	width:665px;
 	height:65px;
 	margin-top:135px;
 }
