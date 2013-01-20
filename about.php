@@ -31,4 +31,4 @@ include('includes/head.inc');
 	We thrive on seeing customer satisfaction. Part of that is our round-the-clock service. If we need to get your system up and running at 11pm at night when all the big box stores are closed we&#39;re there.<br />
 	<br />
 	Let us provide you with Endless Computing Solutions.</p>
-	<?php include('includes/foot.inc');?>
+<?php include('includes/foot.inc');?>
