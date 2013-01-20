@@ -3,6 +3,7 @@ body {
 	background-color:#ebebeb;
 	margin:0px;
 }
+
 #main_head {
 	width:100%;
 	height:200px;
@@ -28,17 +29,42 @@ body {
 	margin-left:auto;
 }
 #logo {
+	float:left;
 	margin-top:25px;
+	margin-left:5px;
 	background-image:url('../images/logo.png');
 	display:block;
+	width:324px;
+	height:98px;
 	text-indent:-9999px;
-	width:324;
-	height:98;
 }
 #nav {
-	float:left;
+	font: 24px 'RobotoLight', Tahoma, sans-serif;
+	float:right;
 	margin-left:10px;
 	width:700px;
 	height:65px;
-	margin-top:125px;
+	margin-top:135px;
 }
+
+
+
+
+/* A note on fonts:
+font: 18px/27px 'RobotoRegular', Tahoma, sans-serif;}
+font: 18px/27px 'RobotoItalic', Tahoma, sans-serif;}
+font: 18px/27px 'RobotoBold', Tahoma, sans-serif;}
+font: 18px/27px 'RobotoBoldItalic', Tahoma, sans-serif;}
+font: 18px/27px 'RobotoCondensed', Tahoma, sans-serif;}
+font: 18px/27px 'RobotoCondensedItalic', Tahoma, sans-serif;}
+font: 18px/27px 'RobotoBoldCondensed', Tahoma, sans-serif;}
+font: 18px/27px 'RobotoBoldCondensedItalic', Tahoma, sans-serif;}
+font: 18px/27px 'RobotoThin', Tahoma, sans-serif;}
+font: 18px/27px 'RobotoThinItalic', Tahoma, sans-serif;}
+font: 18px/27px 'RobotoLight', Tahoma, sans-serif;}
+font: 18px/27px 'RobotoLightItalic', Tahoma, sans-serif;}
+font: 18px/27px 'RobotoMedium', Tahoma, sans-serif;}
+font: 18px/27px 'RobotoMediumItalic', Tahoma, sans-serif;}
+font: 18px/27px 'RobotoBlack', Tahoma, sans-serif;}
+font: 18px/27px 'RobotoBlackItalic', Tahoma, sans-serif;}
+*/

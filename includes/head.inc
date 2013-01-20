@@ -2,7 +2,10 @@
 <html>
 <head>
 <title>
+<!-- roboto -->
+<link rel="stylesheet" type="text/css" href="fonts/roboto.css" />
 <?php
+
 // This will add the title, but add LiquidTec first.
 if ($title) {
 	echo $title.' - Liquid Tec';
