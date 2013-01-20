@@ -249,6 +249,15 @@ a.nav_items:active {
 #diagnose {
 	background-image:url('../images/diagnose.png');
 }
+#bottom_pin {
+	width:492px;
+	height:38px;
+	display:block;
+	background-image:url('../images/bottom_pin.png');
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:30px;
+}
 
 
 

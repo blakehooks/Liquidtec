@@ -90,7 +90,8 @@ From <span class="blue">educating</span> and <span class="blue">consulting</span
 			<span class="panel" id="diagnose"></span>
 		</div>
 	</div>
-	
+</div>
+<div id="bottom_pin">
 </div>
 
 <?php include('includes/foot.inc');?>
