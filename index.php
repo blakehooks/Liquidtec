@@ -4,11 +4,11 @@ include('includes/head.inc');
 ?>
 <script type="text/javascript" src="js/jquery.js"></script> 
 <script type="text/javascript">
-	$(function(){
-		$("#slide_panel").click(function(){
-			$('div.slide_panel').css({left:'-960px'});
-		});
-	});
+	  $("#slide_panel").click(function() {
+	   $("#slide_panel").not('.right').addClass('left').animate({"left": "-=960px"}, 300);
+	  }).mouseleave(function() {
+	   $(".block").filter('.left').removeClass('right').animate({"left": "+=960px"}, 200);
+	  });
 </script>
 
 <?php 
