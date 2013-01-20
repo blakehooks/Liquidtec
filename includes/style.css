@@ -286,7 +286,7 @@ a.nav_items:active {
 	margin-left:auto;
 }
 #foot_watermark {
-	padding:25px;
+	padding:25px 25px 0px 25px;
 	color: rgb(173, 173, 173);
 	font-family:'RobotoLightItalic', Tahoma, sans-serif;
 	font-size:17pt;
