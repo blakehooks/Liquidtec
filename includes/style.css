@@ -147,7 +147,7 @@ a.nav_items:active {
 }
 /* option slider */
 #option_arrows {
-	width:990px;
+	width:1080px;
 	height:180px;
 	margin-top:10px;
 	margin-left:auto;
@@ -186,7 +186,7 @@ a.nav_items:active {
 	overflow-x:hidden;
 }
 #slide_panel {
-	height:160px;
+	height:180px;
 	width:1920px;
 	position:absolute;
 	
