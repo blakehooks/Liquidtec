@@ -6,17 +6,38 @@ include('includes/head.inc');
 
 <script type="text/javascript">
 	$(document).ready(function(){
-		var max = 960;
-		var min = -960;
+		var max = 1920;
+		var min = 0;
 		var current = 0;
 		var slide = $('#slide_panel');
 		var r = $('#arrow_right');
 		var l = $('#arrow_left');
-		l.hide();
+		// initializing what arrows are shown depending on location.
+			if (current != min && current != current) {
+				r.show();
+				l.show();
+			}
+			else if (current == min) {
+				l.hide();
+				r.show();
+			}
+			else if (current == max) {
+				r.hide();
+				l.show();
+			}
+		
 		r.click(function() {
 			slide.animate({left:"-=960"},1000);
 			current -= 960;
-			if (current == min) {
+			if (current != min && current != current) {
+				r.show();
+				l.show();
+			}
+			else if (current == min) {
+				l.hide();
+				r.show();
+			}
+			else if (current == max) {
 				r.hide();
 				l.show();
 			}
@@ -24,9 +45,17 @@ include('includes/head.inc');
 		l.click(function() {
 			slide.animate({left:"+=960"},1000);
 			current += 960;
-			if (current == max) {
+			if (current != min && current != current) {
+				r.show();
+				l.show();
+			}
+			else if (current == min) {
 				l.hide();
 				r.show();
+			}
+			else if (current == max) {
+				r.hide();
+				l.show();
 			}
 		});
 	});
