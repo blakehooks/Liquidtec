@@ -49,4 +49,4 @@ From <span class="blue">educating</span> and <span class="blue">consulting</span
 	
 </div>
 
-<?php include('includes/foot.inc');
+<?php include('includes/foot.inc');?>
