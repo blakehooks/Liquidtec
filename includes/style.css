@@ -65,7 +65,7 @@ a.nav_items:link, a.nav_items:visited{
 	font-family:'RobotoLight', Tahoma, sans-serif;
 	font-size:22pt;
 	color:#777777;
-	background: -webkit-linear-gradient(#777777, #a6a6a6);
+	background: -webkit-linear-gradient(#a6a6a6, #777777);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -164,7 +164,6 @@ a.nav_items:active {
 	margin-left:auto;
 	margin-right:auto;
 	height:180px;
-	padding:10px;
 	position:relative;
 	z-index:1;
 	
@@ -192,7 +191,7 @@ a.nav_items:active {
 	height:180px;
 	width:1920px;
 	position:absolute;
-	left:0px;
+	left:-960px;
 	
 	
 	background: #f0f9ff; /* Old browsers */
