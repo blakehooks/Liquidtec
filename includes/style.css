@@ -45,6 +45,12 @@ body {
 	margin-top:135px;
 	display:inline;
 }
+#nav_o {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	display:inline;
+}
 a.nav_items:link, a.nav_items:visited{
 	text-decoration:none;
 	font-family:'RobotoLight', Tahoma, sans-serif;
