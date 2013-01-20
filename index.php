@@ -13,7 +13,7 @@ include('includes/head.inc');
 		var r = $('#arrow_right');
 		var l = $('#arrow_left');
 		// initializing what arrows are shown depending on location.
-			if (current != min && current != current) {
+			if (current != min && current != max) {
 				r.show();
 				l.show();
 			}
@@ -29,7 +29,7 @@ include('includes/head.inc');
 		r.click(function() {
 			slide.animate({left:"-=960"},1000);
 			current -= 960;
-			if (current != min && current != current) {
+			if (current != min && current != max) {
 				r.show();
 				l.show();
 			}
@@ -45,7 +45,7 @@ include('includes/head.inc');
 		l.click(function() {
 			slide.animate({left:"+=960"},1000);
 			current += 960;
-			if (current != min && current != current) {
+			if (current != min && current != max) {
 				r.show();
 				l.show();
 			}
