@@ -22,7 +22,7 @@ body {
 	box-shadow: 0px 0px 7px rgb(88, 88, 88);
 }
 #main_head_wrap {
-	width:1100px;
+	width:1115px;
 	height:175px;
 	padding:5px;
 	margin-right:auto;
@@ -31,7 +31,6 @@ body {
 #logo {
 	float:left;
 	margin-top:25px;
-	margin-left:5px;
 	background-image:url('../images/logo.png');
 	display:block;
 	width:324px;
@@ -40,29 +39,31 @@ body {
 }
 #nav {
 	float:right;
-	width:735px;
+	width:785px;
 	height:65px;
 	margin-top:135px;
 }
 a.nav_items:link, a.nav_items:visited{
 	text-decoration:none;
 	font-family:'RobotoLight', Tahoma, sans-serif;
-	font-size:24pt;
+	font-size:22pt;
 	color:#777777;
+	vertical-align:middle;
 }
 a.nav_items-b:link, a.nav_items-b:visited{
 	text-decoration:none;
 	font-family:'RobotoLight', Tahoma, sans-serif;
-	font-size:24pt;
+	font-size:22pt;
 	color:#05aede;
+	vertical-align:middle;
 }
 .nav_line {
 	background-image:url('../images/nav_line.png');
 	display: inline-block;
 	height:60px;
 	width:2px;
-	margin-left:5px;
-	margin-right:5px;
+	margin-left:10px;
+	margin-right:10px;
 }
 
 
