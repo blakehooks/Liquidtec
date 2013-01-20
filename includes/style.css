@@ -146,12 +146,20 @@ a.nav_items:active {
 	color:#009a07;
 }
 /* option slider */
-#option_slider {
-	width:960px;
+#option_arrows {
+	width:990px;
 	height:180px;
 	margin-top:10px;
 	margin-left:auto;
 	margin-right:auto;
+	
+}
+
+#option_slider {
+	width:960px;
+	margin-left:auto;
+	margin-right:auto;
+	height:180px;
 	padding:10px;
 	position:relative;
 	z-index:1;
@@ -179,7 +187,7 @@ a.nav_items:active {
 #slide_panel {
 	height:160px;
 	width:1920px;
-	position:relative;
+	position:absolute;
 	
 	
 	background: #f0f9ff; /* Old browsers */
@@ -191,6 +199,24 @@ a.nav_items:active {
 	background: linear-gradient(to right, #f0f9ff 0%,#a1dbff 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f9ff', endColorstr='#a1dbff',GradientType=1 ); /* IE6-9 */
 
+}
+#arrow_right {
+	background-image:url('../images/arrow_right.png');
+	width:43px;
+	height:73px;
+
+	position:absolute;
+	top:53px;
+	right:0px;
+}
+#arrow_left {
+	background-image:url('../images/arrow_left.png');
+	width:43px;
+	height:73px;
+
+	position:absolute;
+	top:53px;
+	left:0px;
 }
 
 
