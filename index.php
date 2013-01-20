@@ -6,7 +6,9 @@ include('includes/head.inc');
 
 <script type="text/javascript">
 	$(document).ready(function(){
-	  $('#slide_panel').animate({left:"+=960"},1000);
+		$('#slide_panel').click(function() {
+			$('#slide_panel').animate({left:"+=960"},1000);
+		});
 	});
 </script>
 
