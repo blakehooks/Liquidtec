@@ -1,0 +1,12 @@
+img {
+	border:none;
+}
+#main_head {
+	border-bottom: 1px solid #c1c1c1;
+}
+a.nav_items:hover {
+	color:#35A4E8;
+}
+a.nav_items:active {
+	color:#3295C7;
+}

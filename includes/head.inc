@@ -23,6 +23,9 @@ if($extra_head) {
 <link rel="stylesheet" type="text/css" href="fonts/roboto.css" />
 </head>
 <body>
+<!--[if lt IE 8]>
+	<link href="includes/ie.css" rel="stylesheet" type="text/css" />
+<![endif]-->
 <div id="main_head">
 <div id="main_head_wrap">
 <a href="index.php" title="Liquid Tec" id="logo">Liquid Tec</a>
