@@ -2,6 +2,15 @@
 $extra_head = '<link rel="stylesheet" type="text/css" href="includes/style.css" />';
 include('includes/head.inc');
 ?>
+<script type="text/javascript" src="js/jquery.js"></script> 
+<script type="text/javascript">
+	$(function(){
+		$("#slide_panel").click(function(){
+			$('div.slide_panel').css({left:'-960px'});
+		});
+	});
+</script>
+
 <?php 
 $nav = 0;
 include('includes/nav.inc'); 
@@ -14,7 +23,8 @@ include('includes/nav.inc');
 From <span class="blue">educating</span> and <span class="blue">consulting</span>, <span class="orange">customization</span> and <span class="orange">creation</span>, to <span class="green">diagnosis</span> and <span class="green">repair</span>; our team of experts does it <span style="font-family:'RobotoCondensed', sans-serif;">all!</span>
 </div>
 <div id="option_slider">
-
+	<div id="slide_panel">
+	</div>
 </div>
 
 <?php include('includes/foot.inc');
