@@ -1,7 +1,7 @@
 <!-- nav -->
 <div id="nav">
 <?php
-	switch ($nav) {
+	switch($nav) {
 ?>
 <a href="home" href="#home" class="nav_items<?php case 0: echo '-b'; break; ?>">Home</a>
 <a href="home" href="#services" class="nav_items<?php case 1: echo '-b'; break; ?>">Services</a>
@@ -11,8 +11,8 @@
 <a href="home" href="#seminars" class="nav_items<?php case 5: echo '-b'; break; ?>">Seminars</a>
 <?php
 	};
+	echo $nav;
 ?>
-
 </div>
 <?php // ends main_head and wrap ?>
 </div>
