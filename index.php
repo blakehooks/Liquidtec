@@ -7,7 +7,14 @@ include('includes/head.inc');
 <script type="text/javascript">
 	$(document).ready(function(){
 		$('#slide_panel').click(function() {
-			$('#slide_panel').animate({left:"+=960"},1000);
+			var slide = $('#slide_panel');
+			var position = slide.position();
+			if (position.left = 0) {
+				$('#slide_panel').animate({left:"-=960"},1000);
+			}
+			else if (position.left <= 960) {
+				$('#slide_panel').animate({left:"+=960"},1000);
+			}
 		});
 	});
 </script>
