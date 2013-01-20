@@ -231,13 +231,13 @@ a.nav_items:active {
 	margin-top:15px;
 }
 .ring {
-	margin-left:40px;
-	margin-right:40px;
-	margin-top:63px;
+	margin-left:5px;
+	margin-right:5px;
 	height:55px;
 	width:55px;
 	display:inline-block;
 	background-image:url('../images/ring.png');
+	vertical-align:middle;
 }
 #educate {
 	background-image:url('../images/educate.png');
