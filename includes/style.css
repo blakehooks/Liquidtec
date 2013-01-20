@@ -43,6 +43,7 @@ body {
 	width:730px;
 	height:65px;
 	margin-top:135px;
+	display:inline;
 }
 a.nav_items:link, a.nav_items:visited{
 	text-decoration:none;
