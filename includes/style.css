@@ -40,7 +40,7 @@ body {
 }
 #nav {
 	float:right;
-	width:730px;
+	width:735px;
 	height:65px;
 	margin-top:135px;
 }
@@ -58,6 +58,7 @@ a.nav_items-b:link, a.nav_items-b:visited{
 }
 .nav_line {
 	background-image:url('../images/nav_line.png');
+	display: inline-block;
 	height:60px;
 	width:2px;
 	margin-left:5px;
