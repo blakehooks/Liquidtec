@@ -41,29 +41,30 @@ body {
 	float:right;
 	width:785px;
 	height:65px;
-	margin-top:135px;
+	margin-top:100px;
 }
 a.nav_items:link, a.nav_items:visited{
 	text-decoration:none;
 	font-family:'RobotoLight', Tahoma, sans-serif;
 	font-size:22pt;
 	color:#777777;
-	vertical-align:middle;
+	display:inline-block;
 }
 a.nav_items-b:link, a.nav_items-b:visited{
 	text-decoration:none;
 	font-family:'RobotoLight', Tahoma, sans-serif;
 	font-size:22pt;
 	color:#05aede;
-	vertical-align:middle;
+	display:inline-block;
 }
 .nav_line {
 	background-image:url('../images/nav_line.png');
 	display: inline-block;
-	height:60px;
+	height:50px;
 	width:2px;
 	margin-left:10px;
 	margin-right:10px;
+	vertical-align:middle;
 }
 
 
