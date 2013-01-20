@@ -24,7 +24,7 @@ if($extra_head) {
 </head>
 <body>
 <!--[if lt IE 8]>
-	<link href="includes/ie.css" rel="stylesheet" type="text/css" />
+	<link href="includes/ie_style.css" rel="stylesheet" type="text/css" />
 <![endif]-->
 <div id="main_head">
 <div id="main_head_wrap">
