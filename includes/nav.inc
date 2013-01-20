@@ -10,3 +10,5 @@
 <?php // ends main_head and wrap ?>
 </div>
 </div>
+<div id="main">
+<div id="main_wrap">

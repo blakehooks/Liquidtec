@@ -16,10 +16,16 @@ body {
 	background: -ms-linear-gradient(top, #f8f8f8 52%,#ebebeb 100%); /* IE10+ */
 	background: linear-gradient(to bottom, #f8f8f8 52%,#ebebeb 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f8f8', endColorstr='#ebebeb',GradientType=0 ); /* IE6-9 */
+	
+	border-bottom: 1px solid #fff;
 
 	-moz-box-shadow: 0px 0px 7px rgb(88, 88, 88);
 	-webkit-box-shadow: 0px 0px 7px rgb(88, 88, 88);
 	box-shadow: 0px 0px 7px rgb(88, 88, 88);
+	/* For IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='#c1c1c1')";
+	/* For IE 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='#c1c1c1');
 }
 #main_head_wrap {
 	width:1115px;
@@ -70,29 +76,42 @@ a.nav_items-b:link, a.nav_items-b:visited{
 	vertical-align:middle;
 }
 a.nav_items:hover {
-	text-shadow: 1px 1px 3px rgba(75, 199, 247, 1.0);
+	text-shadow: 1px 1px 3px rgba(75, 199, 247, 0.3);
 }
 a.nav_items:active {
 	text-shadow: 0px 0px 4px rgba(76, 176, 255, 1.0);
 }
 
+/* Start body CSS! */
+#main {
+	width:100%;
+}
+#main_wrap {
+	width:1200px;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+
+
+
 
 
 /* A note on fonts:
-font: 18px/27px 'RobotoRegular', Tahoma, sans-serif;}
-font: 18px/27px 'RobotoItalic', Tahoma, sans-serif;}
-font: 18px/27px 'RobotoBold', Tahoma, sans-serif;}
-font: 18px/27px 'RobotoBoldItalic', Tahoma, sans-serif;}
-font: 18px/27px 'RobotoCondensed', Tahoma, sans-serif;}
-font: 18px/27px 'RobotoCondensedItalic', Tahoma, sans-serif;}
-font: 18px/27px 'RobotoBoldCondensed', Tahoma, sans-serif;}
-font: 18px/27px 'RobotoBoldCondensedItalic', Tahoma, sans-serif;}
-font: 18px/27px 'RobotoThin', Tahoma, sans-serif;}
-font: 18px/27px 'RobotoThinItalic', Tahoma, sans-serif;}
-font: 18px/27px 'RobotoLight', Tahoma, sans-serif;}
-font: 18px/27px 'RobotoLightItalic', Tahoma, sans-serif;}
-font: 18px/27px 'RobotoMedium', Tahoma, sans-serif;}
-font: 18px/27px 'RobotoMediumItalic', Tahoma, sans-serif;}
-font: 18px/27px 'RobotoBlack', Tahoma, sans-serif;}
-font: 18px/27px 'RobotoBlackItalic', Tahoma, sans-serif;}
+'RobotoRegular'
+'RobotoItalic'
+'RobotoBold'
+'RobotoBoldItalic'
+'RobotoCondensed'
+'RobotoCondensedItalic'
+'RobotoBoldCondensed'
+'RobotoBoldCondensedItalic'
+'RobotoThin'
+'RobotoThinItalic'
+'RobotoLight'
+'RobotoLightItalic'
+'RobotoMedium'
+'RobotoMediumItalic'
+'RobotoBlack'
+'RobotoBlackItalic'
 */

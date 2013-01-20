@@ -6,5 +6,6 @@ include('includes/head.inc');
 $nav = 0;
 include('includes/nav.inc'); 
 ?>
+<img src="images/mission.png" alt="Our Mission" style="width:1150px; margin-left:auto; margin-right:auto;" />
 
 <?php include('includes/foot.inc');
