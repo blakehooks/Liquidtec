@@ -12,8 +12,11 @@ include('includes/head.inc');
 			if (position.left = 0) {
 				$('#slide_panel').animate({left:"-=960"},1000);
 			}
-			else if (position.left = 960) {
+			else if (position.left = -960) {
 				$('#slide_panel').animate({left:"+=960"},1000);
+			}
+			else {
+				$('#slide_panel').animate({left:"-=960"},1000);
 			}
 		});
 	});
