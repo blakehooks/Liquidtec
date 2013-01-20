@@ -9,6 +9,11 @@ img {
 
 #main_head {
 	width:100%;
+	min-width:1115px;
+	/* ie support */
+		width:auto !important;
+		width:1115px;
+		
 	height:175px;
 	position:relative;
 	z-index:1;
@@ -91,6 +96,10 @@ a.nav_items:active {
 /* Start body CSS! */
 #main {
 	width:100%;
+	min-width:1110px;
+		/* ie support */
+		width:auto !important;
+		width:1110px;
 }
 #main_wrap {
 	width:1110px;
@@ -116,10 +125,26 @@ a.nav_items:active {
 	position:absolute;
 	top:500px;
 	z-index:1
+}
+/* mission statement */
+#mission {
+	width:1000px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:10px;
+	font-family:'RobotoLight', Tahoma, sans-serif;
+	font-size:18pt;
 	
 }
-
-
+.blue {
+	color:#0287ae;
+}
+.orange {
+	color:#c67b04;
+}
+.green {
+	color:#009a07;
+}
 
 
 
