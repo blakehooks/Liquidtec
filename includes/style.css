@@ -3,6 +3,9 @@ body {
 	background-color:#ebebeb;
 	margin:0px;
 }
+img {
+	border:none;
+}
 
 #main_head {
 	width:100%;
@@ -89,9 +92,25 @@ a.nav_items:active {
 	width:100%;
 }
 #main_wrap {
-	width:1200px;
+	width:1150px;
 	margin-right:auto;
 	margin-left:auto;
+}
+#main_slide {
+	width:1150px;
+	height:585px;
+	border-left: 1px solid #f6f6f6;
+	border-right: 1px solid #f6f6f6;
+	position:relative;
+}
+#slide_frame {
+	width:1150px;
+	height:67px;
+	background-image:url('../images/slide_frame');
+	position:absolute;
+	top:1083;
+	z-index:1
+	
 }
 
 
