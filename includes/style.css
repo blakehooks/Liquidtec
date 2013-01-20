@@ -137,14 +137,16 @@ a.nav_items:active {
 	font-size:14pt;
 	
 }
+
+
 .blue {
-	color:#6DABED;
+	color:#0287ae;
 }
 .orange {
 	color:#c67b04;
 }
 .green {
-	color:#46BD62;
+	color:#009a07;
 }
 /* option slider */
 #option_arrows {
