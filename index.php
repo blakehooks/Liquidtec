@@ -6,7 +6,7 @@ include('includes/head.inc');
 
 <script type="text/javascript">
 	$(document).ready(function(){
-		var max = 1920;
+		var max = -1920;
 		var min = 0;
 		var current = 0;
 		var slide = $('#slide_panel');
