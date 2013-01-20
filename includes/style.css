@@ -189,7 +189,7 @@ a.nav_items:active {
 }
 #slide_panel {
 	height:180px;
-	width:1925px;
+	width:1920px;
 	position:absolute;
 	left:0px;
 	
@@ -224,7 +224,7 @@ a.nav_items:active {
 }
 .panel {
 	margin-left:20px;
-	margin-right:20px;
+	margin-right:19px;
 	height:150px;
 	width:230px;
 	display:inline-block;

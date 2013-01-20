@@ -11,14 +11,14 @@ include('includes/head.inc');
 		var slide = $('#slide_panel');
 		var r = $('#arrow_right');
 		var l = $('#arrow_left');
-		r.hide();
-		l.click(function() {
+		l.hide();
+		r.click(function() {
 			l.hide();
 			r.show();
 			var position = slide.position();
 			slide.animate({left:"-=960"},1000);
 		});
-		r.click(function() {
+		l.click(function() {
 			r.hide();
 			l.show();
 			var position = slide.position();
