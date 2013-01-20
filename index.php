@@ -42,7 +42,9 @@ From <span class="blue">educating</span> and <span class="blue">consulting</span
 	<div id="option_slider">
 		<div id="slide_panel">
 			<span class="panel" id="educate"></span>
+			<span class="ring"></span>
 			<span class="panel" id="create"></span>
+			<span class="ring"></span>
 			<span class="panel" id="diagnose"></span>
 		</div>
 	</div>
