@@ -2,13 +2,12 @@
 $extra_head = '<link rel="stylesheet" type="text/css" href="includes/style.css" />';
 include('includes/head.inc');
 ?>
-<script type="text/javascript" src="js/jquery.js"></script> 
+<script src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
+
 <script type="text/javascript">
-	  $("#slide_panel").click(function() {
-	   $("#slide_panel").not('.right').addClass('left').animate({"left": "-=960px"}, 300);
-	  }).mouseleave(function() {
-	   $(".block").filter('.left').removeClass('right').animate({"left": "+=960px"}, 200);
-	  });
+	$(document).ready(function(){
+	  $('#slide_panel').animate({left:"+=960"},1000);
+	});
 </script>
 
 <?php 

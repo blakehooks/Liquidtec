@@ -179,8 +179,7 @@ a.nav_items:active {
 #slide_panel {
 	height:160px;
 	width:1920px;
-	position:absolute;
-	left:0px;
+	position:relative;
 	
 	
 	background: #f0f9ff; /* Old browsers */
