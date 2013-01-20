@@ -6,10 +6,12 @@ include('includes/head.inc');
 
 <script type="text/javascript">
 	$(document).ready(function(){
+		var max = 1920;
+		var current = 0;
 		var slide = $('#slide_panel');
 		var r = $('#arrow_right');
 		var l = $('#arrow_left');
-		l.hide();
+		r.hide();
 		l.click(function() {
 			l.hide();
 			r.show();
