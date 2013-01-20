@@ -48,14 +48,12 @@ a.nav_items:link, a.nav_items:visited{
 	font-family:'RobotoLight', Tahoma, sans-serif;
 	font-size:22pt;
 	color:#777777;
-	display:inline-block;
 }
 a.nav_items-b:link, a.nav_items-b:visited{
 	text-decoration:none;
 	font-family:'RobotoLight', Tahoma, sans-serif;
 	font-size:22pt;
 	color:#05aede;
-	display:inline-block;
 }
 .nav_items_s {
 	display: inline-block;
@@ -71,7 +69,12 @@ a.nav_items-b:link, a.nav_items-b:visited{
 	margin-right:10px;
 	vertical-align:middle;
 }
-
+a.nav_items:hover {
+	text-shadow: 1px 1px 3px rgba(75, 199, 247, 1.0);
+}
+a.nav_items:active {
+	text-shadow: 0px 0px 4px rgba(76, 176, 255, 1.0);
+}
 
 
 
