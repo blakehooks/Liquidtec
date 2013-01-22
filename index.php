@@ -54,7 +54,7 @@ include('includes/head.inc');
 			});
 		});
 		
-		function arrow_pick {
+		function arrow_pick() {
 			if (current != min && current != max) {
 				r.fadeIn("fast");
 				l.fadeIn("fast");
