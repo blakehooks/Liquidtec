@@ -12,6 +12,12 @@ include('includes/head.inc');
 		var slide = $('#slide_panel');
 		var r = $('#arrow_right');
 		var l = $('#arrow_left');
+		r.fadeTo('slow', 0.5, function() {
+			// Animation complete.
+		});
+		l.fadeTo('slow', 0.5, function() {
+				// Animation complete.
+		});
 		// initializing what arrows are shown depending on location.
 			if (current != min && current != max) {
 				r.fadeIn("slow");
@@ -25,7 +31,6 @@ include('includes/head.inc');
 				r.fadeOut("slow");
 				l.fadeIn("slow");
 			}
-		
 		r.click(function() {
 			slide.animate({left:"-=960"},1000);
 			current -= 960;
@@ -57,6 +62,26 @@ include('includes/head.inc');
 				r.fadeOut("slow");
 				l.fadeIn("slow");
 			}
+		});
+		r.mouseover(function() {
+			r.fadeTo('slow', 1.0, function() {
+				// Animation complete.
+			});
+		});
+		r.mouseleave(function() {
+			r.fadeTo('slow', 0.5, function() {
+				// Animation complete.
+			});
+		});
+		l.mouseover(function() {
+			l.fadeTo('slow', 1.0, function() {
+				// Animation complete.
+			});
+		});
+		l.mouseleave(function() {
+			l.fadeTo('slow', 0.5, function() {
+				// Animation complete.
+			});
 		});
 	});
 </script>
