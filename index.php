@@ -10,6 +10,7 @@ include('includes/head.inc');
 		var total_slides = 3; // total slides in the 'Our Mission' slider
 		var images_loaded = 0;
 		var shown = 1;
+		var slide_time;
 		
 		var r = $('#arrow_right');
 		var l = $('#arrow_left');
@@ -69,7 +70,7 @@ include('includes/head.inc');
 		if (images_loaded == total_slides) {
 			$('#slide_1').show();
 			if (total_slides > 1) {
-				var slide_time = setInterval(change_slide, 10000);
+				slide_time = setInterval(change_slide, 10000);
 			}
 		}
 	}
