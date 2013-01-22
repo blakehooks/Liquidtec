@@ -7,7 +7,7 @@ include('includes/head.inc');
 <script type="text/javascript">
 	$(document).ready(function(){
 	// initial change variables
-		var total_slides = 2; // total slides in the 'Our Mission' slider
+		var total_slides = 1; // total slides in the 'Our Mission' slider
 		var max = -1920;
 		var min = 0;
 		
