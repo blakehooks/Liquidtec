@@ -12,7 +12,7 @@ include('includes/head.inc');
 		var r = $('#arrow_right');
 		var l = $('#arrow_left');
 		
-		var option_slider {
+		var option_slider = {
 			min: 0,
 			max: -960,
 			current: 0,
