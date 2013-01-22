@@ -94,12 +94,11 @@ include('includes/head.inc');
 			var slide_time = setInterval(change_slide, 10000);
 		}
 		function change_slide() {
-				$('#slide_' + shown).fadeOut(500);
-				if (++shown > total_slides) {
-					shown = 1;
-				}
-				$('#slide_' + (shown)).fadeIn(1500);
+			$('#slide_' + shown).fadeOut(500);
+			if (++shown > total_slides) {
+				shown = 1;
 			}
+			$('#slide_' + (shown)).fadeIn(1500);
 		}
 	});
 </script>
