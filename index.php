@@ -18,7 +18,7 @@ include('includes/head.inc');
 		
 		function arrows_pick(offset) {
 			current += offset;
-			slide.animate({left:offset},1000);
+			slide.animate({left:current},1000);
 			
 
 			if (current != min && current != max) {
@@ -42,7 +42,7 @@ include('includes/head.inc');
 				// Animation complete.
 		});
 		// initializing what arrows are shown depending on location.
-		arrows_pick();
+		arrows_pick(0);
 		r.click(function() {
 			arrows_pick(-960);
 		});
