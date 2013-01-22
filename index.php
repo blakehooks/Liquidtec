@@ -89,53 +89,23 @@ include('includes/head.inc');
 	
 	// timing for the main slider
 		$('#slide_1').show();
-		var shown = 0;
+		var shown = 1;
 		var slide_time = setInterval(change_slide, 10000);
 		function change_slide() {
 			if (total_slides > 1) {
-				if (shown == 0) {
-					$('#slide_1').hide();
-					$('#slide_2').fadeIn(1500);
-						shown = 1;
+				while (shown != total_slides) {
+					$('#slide_' + shown).fadeOut(500);
+					$('#slide_' + (shown+1)).fadeIn(1500);
+					shown++;
 				}
-				else if (shown == 1) {
-					$('#slide_2').hide();
-					if (total_slides > 2) {
-						$('#slide_3').fadeIn(1500);
-						shown = 2;
-					}
-					else {
-						$('#slide_1').fadeIn(1500);
-						shown = 0;
-					}
-				}
-				else if (shown == 2) {
-					$('#slide_3').hide();
-					if (total_slides > 3) {
-						$('#slide_4').fadeIn(1500);
-						shown = 3;
-					}
-					else {
-						$('#slide_1').fadeIn(1500);
-						shown = 0;
-					}
-				}
-				else if (shown == 3) {
-					$('#slide_4').hide();
-					if (total_slides > 4) {
-						$('#slide_5').fadeIn(1500);
-						shown = 4;
-					}
-					else {
-						$('#slide_1').fadeIn(1500);
-						shown = 0;
-					}
-				}
-				else if (shown == 4) {
-					$('#slide_5').hide();
+				if (shown == total_slides) {
+					$('#slide_' + shown).fadeOut(500);
 					$('#slide_1').fadeIn(1500);
-					shown = 0;
+					shown = 1;
 				}
+			}
+			else {
+				clearInterval(slide_time);
 			}
 		}
 	});

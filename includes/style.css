@@ -138,6 +138,8 @@ a.nav_items:active {
 	width:1100px; 
 	margin-left:2px; 
 	margin-right:2px;
+	position:absolute;
+	top:0px;
 }
 
 
