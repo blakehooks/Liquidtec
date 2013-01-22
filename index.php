@@ -5,12 +5,31 @@ include('includes/head.inc');
 <script src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
 
 <script type="text/javascript">
+var total_slides = 3; // total slides in the 'Our Mission' slider
+var images_loaded = 0;
+var shown = 1;
+var slide_time;
+
+function imageload(id) {
+	image_loaded++;
+	if (images_loaded == total_slides) {
+		$('#slide_1').show();
+		if (total_slides > 1) {
+			slide_time = setInterval(change_slide, 10000);
+		}
+	}
+};
+// timing for the main slider
+function change_slide() {
+	$('#slide_' + shown).fadeOut(500);
+	if (++shown > total_slides) {
+		shown = 1;
+	}
+	$('#slide_' + (shown)).fadeIn(1500);
+};
+
 	$(document).ready(function(){
 	// initial change variables
-		var total_slides = 3; // total slides in the 'Our Mission' slider
-		var images_loaded = 0;
-		var shown = 1;
-		var slide_time;
 		
 		var r = $('#arrow_right');
 		var l = $('#arrow_left');
@@ -65,25 +84,8 @@ include('includes/head.inc');
 		l.click(function() {
 			option_slider.moveleft();
 		});
-	function imageload(id) {
-		image_loaded++;
-		if (images_loaded == total_slides) {
-			$('#slide_1').show();
-			if (total_slides > 1) {
-				slide_time = setInterval(change_slide, 10000);
-			}
-		}
-	}
-	
-	// timing for the main slider
-		function change_slide() {
-			$('#slide_' + shown).fadeOut(500);
-			if (++shown > total_slides) {
-				shown = 1;
-			}
-			$('#slide_' + (shown)).fadeIn(1500);
-		}
 	});
+
 </script>
 
 <?php 
