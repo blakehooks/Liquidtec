@@ -351,7 +351,7 @@ a.nav_items:active {
 	font-weight: normal;
 	padding: 20px;
 	margin: -20px -20px 50px -20px;
-	background-color: #f8f8f8;
+	background-color: rgb(101, 194, 202);
 	background-image: -moz-linear-gradient(rgb(101, 194, 202),#f8f8f8);
 	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(101, 194, 202)), to(#f8f8f8));    
 	background-image: -webkit-linear-gradient(rgb(101, 194, 202), #f8f8f8);
