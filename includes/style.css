@@ -134,6 +134,11 @@ a.nav_items:active {
 	font-size:14pt;
 	
 }
+.slide_image {
+	width:1100px; 
+	margin-left:2px; 
+	margin-right:2px;
+}
 
 
 .blue {

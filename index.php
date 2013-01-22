@@ -6,8 +6,11 @@ include('includes/head.inc');
 
 <script type="text/javascript">
 	$(document).ready(function(){
+	// initial change variables
+		var total_slides = 2; // total slides in the 'Our Mission' slider
 		var max = -1920;
 		var min = 0;
+		
 		var current = 0;
 		var slide = $('#slide_panel');
 		var r = $('#arrow_right');
@@ -85,19 +88,54 @@ include('includes/head.inc');
 		});
 	
 	// timing for the main slider
-		$('#slide_2').hide();
+		$('#slide_1').show();
 		var shown = 0;
 		var slide_time = setInterval(change_slide, 10000);
 		function change_slide() {
-			if (shown == 0) {
-				$('#slide_1').hide();
-				$('#slide_2').fadeIn(1500);
-				shown = 1;
-			}
-			else if (shown == 1) {
-				$('#slide_2').hide();
-				$('#slide_1').fadeIn(1500);
-				shown = 0;
+			if (total_slides > 1) {
+				if (shown == 0) {
+					$('#slide_1').hide();
+					$('#slide_2').fadeIn(1500);
+						shown = 1;
+				}
+				else if (shown == 1) {
+					$('#slide_2').hide();
+					if (total_slides > 2) {
+						$('#slide_3').fadeIn(1500);
+						shown = 2;
+					}
+					else {
+						$('#slide_1').fadeIn(1500);
+						shown = 0;
+					}
+				}
+				else if (shown == 2) {
+					$('#slide_3').hide();
+					if (total_slides > 3) {
+						$('#slide_4').fadeIn(1500);
+						shown = 3;
+					}
+					else {
+						$('#slide_1').fadeIn(1500);
+						shown = 0;
+					}
+				}
+				else if (shown == 3) {
+					$('#slide_4').hide();
+					if (total_slides > 4) {
+						$('#slide_5').fadeIn(1500);
+						shown = 4;
+					}
+					else {
+						$('#slide_1').fadeIn(1500);
+						shown = 0;
+					}
+				}
+				else if (shown == 4) {
+					$('#slide_5').hide();
+					$('#slide_1').fadeIn(1500);
+					shown = 0;
+				}
 			}
 		}
 	});
@@ -108,8 +146,8 @@ $nav = 0;
 include('includes/nav.inc'); 
 ?>
 <div id="main_slide">
-<img src="images/mission.png" id="slide_1" alt="Our Mission" style="width:1100px; margin-left:2px; margin-right:2px;" />
-<img src="images/mission2.png" id="slide_2" alt="Our Mission" style="width:1100px; margin-left:2px; margin-right:2px;" />
+<img src="images/mission.png" class="slide_image" id="slide_1" alt="Our Mission" style="display:none;" />
+<img src="images/mission2.png" class="slide_image" id="slide_2" alt="Our Mission" style="display:none;" />
 <div id="slide_frame"></div>
 </div>
 <div id="mission">
