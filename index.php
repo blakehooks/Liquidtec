@@ -12,24 +12,24 @@ include('includes/head.inc');
 		var slide = $('#slide_panel');
 		var r = $('#arrow_right');
 		var l = $('#arrow_left');
-		r.fadeTo('slow', 0.5, function() {
+		r.fadeTo('fast', 0.5, function() {
 			// Animation complete.
 		});
-		l.fadeTo('slow', 0.5, function() {
+		l.fadeTo('fast', 0.5, function() {
 				// Animation complete.
 		});
 		// initializing what arrows are shown depending on location.
 			if (current != min && current != max) {
-				r.fadeIn("slow");
-				l.fadeIn("slow");
+				r.fadeIn("fast");
+				l.fadeIn("fast");
 			}
 			else if (current == min) {
-				l.fadeOut("slow");
-				r.fadeIn("slow");
+				l.fadeOut("fast");
+				r.fadeIn("fast");
 			}
 			else if (current == max) {
-				r.fadeOut("slow");
-				l.fadeIn("slow");
+				r.fadeOut("fast");
+				l.fadeIn("fast");
 			}
 		r.click(function() {
 			slide.animate({left:"-=960"},1000);
@@ -64,22 +64,22 @@ include('includes/head.inc');
 			}
 		});
 		r.mouseover(function() {
-			r.fadeTo('slow', 1.0, function() {
+			r.fadeTo('fast', 1.0, function() {
 				// Animation complete.
 			});
 		});
 		r.mouseleave(function() {
-			r.fadeTo('slow', 0.5, function() {
+			r.fadeTo('fast', 0.5, function() {
 				// Animation complete.
 			});
 		});
 		l.mouseover(function() {
-			l.fadeTo('slow', 1.0, function() {
+			l.fadeTo('fast', 1.0, function() {
 				// Animation complete.
 			});
 		});
 		l.mouseleave(function() {
-			l.fadeTo('slow', 0.5, function() {
+			l.fadeTo('fast', 0.5, function() {
 				// Animation complete.
 			});
 		});
