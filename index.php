@@ -16,7 +16,11 @@ include('includes/head.inc');
 		var r = $('#arrow_right');
 		var l = $('#arrow_left');
 		
-		function arrows_pick() {
+		function arrows_pick(offset) {
+			current += offset;
+			slide.animate({left:offset},1000);
+			
+
 			if (current != min && current != max) {
 				r.fadeIn("fast");
 				l.fadeIn("fast");
@@ -40,14 +44,12 @@ include('includes/head.inc');
 		// initializing what arrows are shown depending on location.
 		arrows_pick();
 		r.click(function() {
-			slide.animate({left:"-=960"},1000);
-			current -= 960;
-			arrows_pick();
+			arrows_pick(-960);
 		});
 		l.click(function() {
-			slide.animate({left:"+=960"},1000);
-			current += 960;
-			arrows_pick();
+		//	slide.animate({left:"+=960"},1000);
+		//	current += 960;
+			arrows_pick(960);
 		});
 		r.mouseover(function() {
 			r.fadeTo('fast', 1.0, function() {
