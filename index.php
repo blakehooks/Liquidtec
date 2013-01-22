@@ -29,6 +29,7 @@ function change_slide() {
 };
 
 	$(document).ready(function(){
+	var occurences = $('.slide_image').length;
 	// initial change variables
 		
 		var r = $('#arrow_right');
