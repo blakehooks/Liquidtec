@@ -307,7 +307,7 @@ a.nav_items:active {
 }
 
 #pricing-table .plan {
-	font-family:'RobotoLightItalic', Tahoma, sans-serif;
+	font: 12px 'Lucida Sans', 'trebuchet MS', Arial, Helvetica;
 	text-shadow: 0 1px rgba(255,255,255,.8);        
 	background: #fff;      
 	border: 1px solid #ddd;
