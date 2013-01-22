@@ -90,12 +90,12 @@ include('includes/head.inc');
 		var slide_time = setInterval(change_slide, 10000);
 		function change_slide() {
 			if (shown == 0) {
-				$('#slide_1').fadeOut("slow");
+				$('#slide_1').hide();
 				$('#slide_2').fadeIn("slow");
 				shown = 1;
 			}
 			else if (shown == 1) {
-				$('#slide_2').fadeOut("slow");
+				$('#slide_2').hide();
 				$('#slide_1').fadeIn("slow");
 				shown = 0;
 			}
