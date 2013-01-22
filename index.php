@@ -32,11 +32,11 @@ include('includes/head.inc');
 				l.fadeTo('fast', 1.0);
 			}
 			else if (current == min) {
-				l.fadeTo('fast', 0.5);
+				l.fadeTo('fast', 0);
 				r.fadeTo('fast', 1.0);
 			}
 			else if (current == max) {
-				r.fadeTo('fast', 0.5);
+				r.fadeTo('fast', 0);
 				l.fadeTo('fast', 1.0);
 			}
 		}
@@ -49,9 +49,7 @@ include('includes/head.inc');
 		});
 		// calls function and passes the offset amount
 		arrows_pick(0);
-		r.click(function() {
-			arrows_pick(-960);
-		});
+		r.click(arrows_pick(-960));
 		l.click(function() {
 			arrows_pick(960);
 		});
