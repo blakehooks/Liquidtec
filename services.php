@@ -5,7 +5,7 @@ $nav = 1;
 include('includes/nav.inc'); 
 ?>
 <h1>Our Services</h1>
-
+<div>
 <div id="pricing-table" class="clear">
     <div class="plan">
         <h3>Complete Repair Package<span>$75</span></h3>      
@@ -49,7 +49,7 @@ include('includes/nav.inc');
             <li>Data Migration</li>            
         </ul> 
     </div>
-    
+</div>
     </br>
 
 				<h2>
