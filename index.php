@@ -16,7 +16,7 @@ include('includes/head.inc');
 		var r = $('#arrow_right');
 		var l = $('#arrow_left');
 		
-		function arrow_pick() {
+		function arrows_pick() {
 			if (current != min && current != max) {
 				r.fadeIn("fast");
 				l.fadeIn("fast");
