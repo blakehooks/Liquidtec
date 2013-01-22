@@ -90,22 +90,15 @@ include('includes/head.inc');
 	// timing for the main slider
 		$('#slide_1').show();
 		var shown = 1;
-		var slide_time = setInterval(change_slide, 10000);
+		if (total_slides > 1) {
+			var slide_time = setInterval(change_slide, 10000);
+		}
 		function change_slide() {
-			if (total_slides > 1) {
-				while (shown != total_slides) {
-					$('#slide_' + shown).fadeOut(500);
-					$('#slide_' + (shown+1)).fadeIn(1500);
-					shown++;
-				}
-				if (shown == total_slides) {
-					$('#slide_' + shown).fadeOut(500);
-					$('#slide_1').fadeIn(1500);
+				if (++shown > total_slides) {
 					shown = 1;
 				}
-			}
-			else {
-				clearInterval(slide_time);
+				$('#slide_' + shown).fadeOut(500);
+				$('#slide_' + (shown+1)).fadeIn(1500);
 			}
 		}
 	});
