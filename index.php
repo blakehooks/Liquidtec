@@ -39,7 +39,7 @@ include('includes/head.inc');
 				l.fadeIn("slow");
 			}
 			else if (current == min) {
-				l.fadeOut("slow");
+				l.hide();
 				r.fadeIn("slow");
 			}
 			else if (current == max) {
@@ -55,7 +55,7 @@ include('includes/head.inc');
 				l.fadeIn("slow");
 			}
 			else if (current == min) {
-				l.fadeOut("slow");
+				l.hide();
 				r.fadeIn("slow");
 			}
 			else if (current == max) {
@@ -83,6 +83,23 @@ include('includes/head.inc');
 				// Animation complete.
 			});
 		});
+	
+	// timing for the main slider
+		$('#slide_2').hide();
+		var shown = 0;
+		var slide_time = setInterval(change_slide, 10000);
+		function change_slide() {
+			if (shown == 0) {
+				$('#slide_1')fadeOut("slow");
+				$('#slide_2')fadeIn("slow");
+				shown = 1;
+			}
+			else if (shown == 1) {
+				$('#slide_2')fadeOut("slow");
+				$('#slide_1')fadeIn("slow");
+				shown = 0;
+			}
+		}
 	});
 </script>
 
@@ -91,7 +108,8 @@ $nav = 0;
 include('includes/nav.inc'); 
 ?>
 <div id="main_slide">
-<img src="images/mission.png" alt="Our Mission" style="width:1100px; margin-left:2px; margin-right:2px;" />
+<img src="images/mission.png" id="slide_1" alt="Our Mission" style="width:1100px; margin-left:2px; margin-right:2px;" />
+<img src="images/mission2.png" id="slide_2" alt="Our Mission" style="width:1100px; margin-left:2px; margin-right:2px;" />
 <div id="slide_frame"></div>
 </div>
 <div id="mission">
