@@ -15,6 +15,22 @@ include('includes/head.inc');
 		var slide = $('#slide_panel');
 		var r = $('#arrow_right');
 		var l = $('#arrow_left');
+		
+		function arrow_pick() {
+			if (current != min && current != max) {
+				r.fadeIn("fast");
+				l.fadeIn("fast");
+			}
+			else if (current == min) {
+				l.fadeOut("fast");
+				r.fadeIn("fast");
+			}
+			else if (current == max) {
+				r.fadeOut("fast");
+				l.fadeIn("fast");
+			}
+		}
+		
 		r.fadeTo('fast', 0.5, function() {
 			// Animation complete.
 		});
@@ -53,21 +69,6 @@ include('includes/head.inc');
 				// Animation complete.
 			});
 		});
-		
-		function arrow_pick() {
-			if (current != min && current != max) {
-				r.fadeIn("fast");
-				l.fadeIn("fast");
-			}
-			else if (current == min) {
-				l.fadeOut("fast");
-				r.fadeIn("fast");
-			}
-			else if (current == max) {
-				r.fadeOut("fast");
-				l.fadeIn("fast");
-			}
-		}
 	
 	// timing for the main slider
 		$('#slide_1').show();
