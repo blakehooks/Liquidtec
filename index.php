@@ -18,6 +18,12 @@ include('includes/head.inc');
 		
 		function arrows_pick(offset) {
 			current += offset;
+			if (current < max) {
+				current = max;
+			}
+			else if (current > min) {
+				current = min;
+			}
 			slide.animate({left:current},1000);
 			
 
