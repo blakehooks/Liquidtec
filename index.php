@@ -24,7 +24,7 @@ include('includes/head.inc');
 				slide.animate({left:this.current},1000);
 			},
 			moveright:function() {
-				this.current += 960;
+				this.current -= 960;
 				if (this.current > this.min) {
 					this.current = this.min;
 				}
@@ -43,7 +43,7 @@ include('includes/head.inc');
 			}
 			},
 			moveleft:function() {
-				this.current -= 960;
+				this.current += 960;
 				if (this.current < this.max) {
 					this.current = this.max;
 				}
