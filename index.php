@@ -11,12 +11,12 @@ include('includes/head.inc');
 		
 		var r = $('#arrow_right');
 		var l = $('#arrow_left');
+		var slide = $('#slide_panel');
 		
 		var option_slider = {
 			min: 0,
 			max: -960,
 			current: 0,
-			var slide: $('#slide_panel'),
 			init: function() {
 				current = 0;
 				l.fadeTo('fast', 0);
