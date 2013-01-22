@@ -8,10 +8,10 @@ include('includes/head.inc');
 	$(document).ready(function(){
 	// initial change variables
 		var total_slides = 3; // total slides in the 'Our Mission' slider
-		var max = -1920;
+		var max = -960;
 		var min = 0;
-		
 		var current = 0;
+		
 		var slide = $('#slide_panel');
 		var r = $('#arrow_right');
 		var l = $('#arrow_left');
@@ -22,49 +22,16 @@ include('includes/head.inc');
 				// Animation complete.
 		});
 		// initializing what arrows are shown depending on location.
-			if (current != min && current != max) {
-				r.fadeIn("fast");
-				l.fadeIn("fast");
-			}
-			else if (current == min) {
-				l.fadeOut("fast");
-				r.fadeIn("fast");
-			}
-			else if (current == max) {
-				r.fadeOut("fast");
-				l.fadeIn("fast");
-			}
+		arrows_pick();
 		r.click(function() {
 			slide.animate({left:"-=960"},1000);
 			current -= 960;
-			if (current != min && current != max) {
-				r.fadeIn("slow");
-				l.fadeIn("slow");
-			}
-			else if (current == min) {
-				l.hide();
-				r.fadeIn("slow");
-			}
-			else if (current == max) {
-				r.fadeOut("slow");
-				l.fadeIn("slow");
-			}
+			arrows_pick();
 		});
 		l.click(function() {
 			slide.animate({left:"+=960"},1000);
 			current += 960;
-			if (current != min && current != max) {
-				r.fadeIn("slow");
-				l.fadeIn("slow");
-			}
-			else if (current == min) {
-				l.hide();
-				r.fadeIn("slow");
-			}
-			else if (current == max) {
-				r.fadeOut("slow");
-				l.fadeIn("slow");
-			}
+			arrows_pick();
 		});
 		r.mouseover(function() {
 			r.fadeTo('fast', 1.0, function() {
@@ -86,6 +53,21 @@ include('includes/head.inc');
 				// Animation complete.
 			});
 		});
+		
+		function arrow_pick {
+			if (current != min && current != max) {
+				r.fadeIn("fast");
+				l.fadeIn("fast");
+			}
+			else if (current == min) {
+				l.fadeOut("fast");
+				r.fadeIn("fast");
+			}
+			else if (current == max) {
+				r.fadeOut("fast");
+				l.fadeIn("fast");
+			}
+		}
 	
 	// timing for the main slider
 		$('#slide_1').show();
