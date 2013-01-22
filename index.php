@@ -23,31 +23,16 @@ include('includes/head.inc');
 				r.fadeTo('fast', 1.0);
 				slide.animate({left:this.current},1000);
 			},
-			moveright:function() {
-				this.current -= 960;
-				if (this.current > this.min) {
-					this.current = this.min;
-				}
-				slide.animate({left:this.current},1000);
-			if (this.current != this.min && this.current != this.max) {
-				r.fadeTo('fast', 1.0);
-				l.fadeTo('fast', 1.0);
-			}
-			else if (this.current == this.min) {
-				l.fadeTo('fast', 0);
-				r.fadeTo('fast', 1.0);
-			}
-			else if (this.current == this.max) {
-				r.fadeTo('fast', 0);
-				l.fadeTo('fast', 1.0);
-			}
-			},
-			moveleft:function() {
-				this.current += 960;
+			function update(offset) {
+				this.current += offset;
 				if (this.current < this.max) {
 					this.current = this.max;
 				}
+				else if (this.current > this.min) {
+					this.current = this.min;
+				}
 				slide.animate({left:this.current},1000);
+
 				if (this.current != this.min && this.current != this.max) {
 					r.fadeTo('fast', 1.0);
 					l.fadeTo('fast', 1.0);
@@ -60,33 +45,15 @@ include('includes/head.inc');
 					r.fadeTo('fast', 0);
 					l.fadeTo('fast', 1.0);
 				}
+			},
+			moveright:function() {
+				this.update(-960);
+			},
+			moveleft:function() {
+				this.update(960);
 			}
 		};
 		
-/*		function arrows_pick(offset) {
-			current += offset;
-			if (current < max) {
-				current = max;
-			}
-			else if (current > min) {
-				current = min;
-			}
-			slide.animate({left:current},1000);
-			
-
-			if (current != min && current != max) {
-				r.fadeTo('fast', 1.0);
-				l.fadeTo('fast', 1.0);
-			}
-			else if (current == min) {
-				l.fadeTo('fast', 0);
-				r.fadeTo('fast', 1.0);
-			}
-			else if (current == max) {
-				r.fadeTo('fast', 0);
-				l.fadeTo('fast', 1.0);
-			}
-		} */
 		// calls function and passes the offset amount
 		option_slider.init();
 		r.click(function() {
