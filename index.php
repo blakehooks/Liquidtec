@@ -5,16 +5,16 @@ include('includes/head.inc');
 <script src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
 
 <script type="text/javascript">
-var total_slides = 3; // total slides in the 'Our Mission' slider
+// var total_slides = 3;
 var images_loaded = 0;
 var shown = 1;
 var slide_time;
 
 function imageload(id) {
 	images_loaded++;
-	if (images_loaded == total_slides) {
+	if (images_loaded == $('.slide_image').length;) {
 		$('#slide_1').show();
-		if (total_slides > 1) {
+		if (images_loaded > 1) {
 			slide_time = setInterval(change_slide, 10000);
 		}
 	}
@@ -22,14 +22,13 @@ function imageload(id) {
 // timing for the main slider
 function change_slide() {
 	$('#slide_' + shown).fadeOut(500);
-	if (++shown > total_slides) {
+	if (++shown > images_loaded) {
 		shown = 1;
 	}
 	$('#slide_' + (shown)).fadeIn(1500);
 };
 
 	$(document).ready(function(){
-	var occurences = $('.slide_image').length;
 	// initial change variables
 		
 		var r = $('#arrow_right');
