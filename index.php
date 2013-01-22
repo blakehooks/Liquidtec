@@ -12,7 +12,7 @@ var slide_time;
 
 function imageload(id) {
 	images_loaded++;
-	if (images_loaded == $('.slide_image').length;) {
+	if (images_loaded == $('.slide_image').length) {
 		$('#slide_1').show();
 		if (images_loaded > 1) {
 			slide_time = setInterval(change_slide, 10000);
