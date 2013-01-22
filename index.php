@@ -91,12 +91,12 @@ include('includes/head.inc');
 		function change_slide() {
 			if (shown == 0) {
 				$('#slide_1').hide();
-				$('#slide_2').fadeIn("slow");
+				$('#slide_2').fadeIn(1500);
 				shown = 1;
 			}
 			else if (shown == 1) {
 				$('#slide_2').hide();
-				$('#slide_1').fadeIn("slow");
+				$('#slide_1').fadeIn(1500);
 				shown = 0;
 			}
 		}
