@@ -38,11 +38,11 @@ include('includes/head.inc');
 					l.fadeTo('fast', 1.0);
 				}
 				else if (this.current == this.min) {
-					l.fadeTo('fast', 0);
+					l.hide();
 					r.fadeTo('fast', 1.0);
 				}
 				else if (this.current == this.max) {
-					r.fadeTo('fast', 0);
+					r.hide();
 					l.fadeTo('fast', 1.0);
 				}
 			},
