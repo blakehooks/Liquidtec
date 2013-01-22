@@ -18,45 +18,45 @@ include('includes/head.inc');
 			max: -960,
 			current: 0,
 			init: function() {
-				current = 0;
+				this.current = 0;
 				l.fadeTo('fast', 0);
 				r.fadeTo('fast', 1.0);
-				slide.animate({left:current},1000);
+				slide.animate({left:this.current},1000);
 			},
 			moveright:function() {
-				current += 960;
-				if (current > min) {
-					current = min;
+				this.current += 960;
+				if (this.current > this.min) {
+					this.current = this.min;
 				}
-				slide.animate({left:current},1000);
-			if (current != min && current != max) {
+				slide.animate({left:this.current},1000);
+			if (this.current != this.min && this.current != this.max) {
 				r.fadeTo('fast', 1.0);
 				l.fadeTo('fast', 1.0);
 			}
-			else if (current == min) {
+			else if (this.current == this.min) {
 				l.fadeTo('fast', 0);
 				r.fadeTo('fast', 1.0);
 			}
-			else if (current == max) {
+			else if (this.current == this.max) {
 				r.fadeTo('fast', 0);
 				l.fadeTo('fast', 1.0);
 			}
 			},
 			moveleft:function() {
-				current -= 960;
-				if (current < max) {
-					current = max;
+				this.current -= 960;
+				if (this.current < this.max) {
+					this.current = this.max;
 				}
-				slide.animate({left:current},1000);
-				if (current != min && current != max) {
+				slide.animate({left:this.current},1000);
+				if (this.current != this.min && this.current != this.max) {
 					r.fadeTo('fast', 1.0);
 					l.fadeTo('fast', 1.0);
 				}
-				else if (current == min) {
+				else if (this.current == this.min) {
 					l.fadeTo('fast', 0);
 					r.fadeTo('fast', 1.0);
 				}
-				else if (current == max) {
+				else if (this.current == this.max) {
 					r.fadeTo('fast', 0);
 					l.fadeTo('fast', 1.0);
 				}
