@@ -16,7 +16,7 @@ include('includes/head.inc');
 			min: 0,
 			max: -960,
 			current: 0,
-			slide: $('#slide_panel'),
+			var slide: $('#slide_panel'),
 			init: function() {
 				current = 0;
 				l.fadeTo('fast', 0);
