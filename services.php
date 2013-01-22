@@ -4,7 +4,7 @@ include('includes/head.inc');
 $nav = 1;
 include('includes/nav.inc'); 
 ?>
-<h1>Our Services</h1>
+<h1>Package Services</h1>
 <div>
 <div id="pricing-table" class="clear">
     <div class="plan">
