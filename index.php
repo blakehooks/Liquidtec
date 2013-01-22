@@ -23,7 +23,7 @@ include('includes/head.inc');
 				r.fadeTo('fast', 1.0);
 				slide.animate({left:this.current},1000);
 			},
-			function update(offset) {
+			update: function(offset) {
 				this.current += offset;
 				if (this.current < this.max) {
 					this.current = this.max;
