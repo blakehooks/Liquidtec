@@ -28,16 +28,16 @@ include('includes/head.inc');
 			
 
 			if (current != min && current != max) {
-				r.fadeIn("fast");
-				l.fadeIn("fast");
+				r.fadeTo('fast', 1.0);
+				l.fadeTo('fast', 1.0);
 			}
 			else if (current == min) {
-				l.fadeOut("fast");
-				r.fadeIn("fast");
+				l.fadeTo('fast', 0.5);
+				r.fadeTo('fast', 1.0);
 			}
 			else if (current == max) {
-				r.fadeOut("fast");
-				l.fadeIn("fast");
+				r.fadeTo('fast', 0.5);
+				l.fadeTo('fast', 1.0);
 			}
 		}
 		
@@ -47,36 +47,15 @@ include('includes/head.inc');
 		l.fadeTo('fast', 0.5, function() {
 				// Animation complete.
 		});
-		// initializing what arrows are shown depending on location.
+		// calls function and passes the offset amount
 		arrows_pick(0);
 		r.click(function() {
 			arrows_pick(-960);
 		});
 		l.click(function() {
-		//	slide.animate({left:"+=960"},1000);
-		//	current += 960;
 			arrows_pick(960);
 		});
-		r.mouseover(function() {
-			r.fadeTo('fast', 1.0, function() {
-				// Animation complete.
-			});
-		});
-		r.mouseleave(function() {
-			r.fadeTo('fast', 0.5, function() {
-				// Animation complete.
-			});
-		});
-		l.mouseover(function() {
-			l.fadeTo('fast', 1.0, function() {
-				// Animation complete.
-			});
-		});
-		l.mouseleave(function() {
-			l.fadeTo('fast', 0.5, function() {
-				// Animation complete.
-			});
-		});
+
 	
 	// timing for the main slider
 		$('#slide_1').show();
