@@ -303,7 +303,7 @@ a.nav_items:active {
 #pricing-table {
 	margin: 0px auto;
 	text-align: center;
-	width: 750px; /* total computed width = 222 x 3 + 226 */
+	width: 700px; /* total computed width = 222 x 3 + 226 */
 }
 
 #pricing-table .plan {
