@@ -7,7 +7,7 @@ include('includes/head.inc');
 <script type="text/javascript">
 	$(document).ready(function(){
 	// initial change variables
-		var total_slides = 1; // total slides in the 'Our Mission' slider
+		var total_slides = 3; // total slides in the 'Our Mission' slider
 		var max = -1920;
 		var min = 0;
 		
@@ -110,6 +110,7 @@ include('includes/nav.inc');
 <div id="main_slide">
 <img src="images/mission.png" class="slide_image" id="slide_1" alt="Our Mission" style="display:none;" />
 <img src="images/mission2.png" class="slide_image" id="slide_2" alt="Our Mission" style="display:none;" />
+<img src="images/mission3.png" class="slide_image" id="slide_3" alt="Our Mission" style="display:none;" />
 <div id="slide_frame"></div>
 </div>
 <div id="mission">
