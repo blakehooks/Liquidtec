@@ -8,15 +8,38 @@ include('includes/head.inc');
 	$(document).ready(function(){
 	// initial change variables
 		var total_slides = 3; // total slides in the 'Our Mission' slider
-		var max = -960;
-		var min = 0;
-		var current = 0;
 		
-		var slide = $('#slide_panel');
 		var r = $('#arrow_right');
 		var l = $('#arrow_left');
 		
-		function arrows_pick(offset) {
+		var option_slider {
+			min: 0,
+			max: -960,
+			current: 0,
+			slide: $('#slide_panel'),
+			init: function() {
+				current = 0;
+				l.fadeTo('fast', 0);
+				r.fadeTo('fast', 1.0);
+				slide.animate({left:current},1000);
+			},
+			moveright:function() {
+				current += 960
+				if (current > min) {
+					current = min;
+				}
+				slide.animate({left:current},1000);
+			},
+			moveleft:function() {
+				current -= 960
+				if (current < max) {
+					current = max;
+				}
+				slide.animate({left:current},1000);
+			}
+		}
+		
+/*		function arrows_pick(offset) {
 			current += offset;
 			if (current < max) {
 				current = max;
@@ -39,19 +62,14 @@ include('includes/head.inc');
 				r.fadeTo('fast', 0);
 				l.fadeTo('fast', 1.0);
 			}
-		}
-		
-		r.fadeTo('fast', 0.5, function() {
-			// Animation complete.
-		});
-		l.fadeTo('fast', 0.5, function() {
-				// Animation complete.
-		});
+		} */
 		// calls function and passes the offset amount
-		arrows_pick(0);
-		r.click(arrows_pick(-960));
+		option_slider.init();
+		r.click(function() {
+			option_slider.moveright();
+		});
 		l.click(function() {
-			arrows_pick(960);
+			option_slider.moveleft();
 		});
 
 	
