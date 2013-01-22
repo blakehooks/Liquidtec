@@ -8,6 +8,8 @@ include('includes/head.inc');
 	$(document).ready(function(){
 	// initial change variables
 		var total_slides = 3; // total slides in the 'Our Mission' slider
+		var images_loaded = 0;
+		var shown = 1;
 		
 		var r = $('#arrow_right');
 		var l = $('#arrow_left');
@@ -62,14 +64,17 @@ include('includes/head.inc');
 		l.click(function() {
 			option_slider.moveleft();
 		});
-
+	function imageload(id) {
+		image_loaded++;
+		if (images_loaded == total_slides) {
+			$('#slide_1').show();
+			if (total_slides > 1) {
+				var slide_time = setInterval(change_slide, 10000);
+			}
+		}
+	}
 	
 	// timing for the main slider
-		$('#slide_1').show();
-		var shown = 1;
-		if (total_slides > 1) {
-			var slide_time = setInterval(change_slide, 10000);
-		}
 		function change_slide() {
 			$('#slide_' + shown).fadeOut(500);
 			if (++shown > total_slides) {
@@ -85,9 +90,9 @@ $nav = 0;
 include('includes/nav.inc'); 
 ?>
 <div id="main_slide">
-<img src="images/mission.png" class="slide_image" id="slide_1" alt="Our Mission" style="display:none;" />
-<img src="images/mission2.png" class="slide_image" id="slide_2" alt="Our Mission" style="display:none;" />
-<img src="images/mission3.png" class="slide_image" id="slide_3" alt="Our Mission" style="display:none;" />
+<img src="images/mission.png" onload="imageload(this.id);" class="slide_image" id="slide_1" alt="Our Mission" style="display:none;" />
+<img src="images/mission2.png" onload="imageload(this.id);" class="slide_image" id="slide_2" alt="Our Mission" style="display:none;" />
+<img src="images/mission3.png" onload="imageload(this.id);" class="slide_image" id="slide_3" alt="Our Mission" style="display:none;" />
 <div id="slide_frame"></div>
 </div>
 <div id="mission">
