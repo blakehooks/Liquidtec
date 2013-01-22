@@ -14,48 +14,48 @@ include('includes/head.inc');
 		var l = $('#arrow_left');
 		// initializing what arrows are shown depending on location.
 			if (current != min && current != max) {
-				r.show();
-				l.show();
+				r.fadeIn("slow");
+				l.fadeIn("slow");
 			}
 			else if (current == min) {
-				l.hide();
-				r.show();
+				l.fadeOut("slow");
+				r.fadeIn("slow");
 			}
 			else if (current == max) {
-				r.hide();
-				l.show();
+				r.fadeOut("slow");
+				l.fadeIn("slow");
 			}
 		
 		r.click(function() {
 			slide.animate({left:"-=960"},1000);
 			current -= 960;
 			if (current != min && current != max) {
-				r.show();
-				l.show();
+				r.fadeIn("slow");
+				l.fadeIn("slow");
 			}
 			else if (current == min) {
-				l.hide();
-				r.show();
+				l.fadeOut("slow");
+				r.fadeIn("slow");
 			}
 			else if (current == max) {
-				r.hide();
-				l.show();
+				r.fadeOut("slow");
+				l.fadeIn("slow");
 			}
 		});
 		l.click(function() {
 			slide.animate({left:"+=960"},1000);
 			current += 960;
 			if (current != min && current != max) {
-				r.show();
-				l.show();
+				r.fadeIn("slow");
+				l.fadeIn("slow");
 			}
 			else if (current == min) {
-				l.hide();
-				r.show();
+				l.fadeOut("slow");
+				r.fadeIn("slow");
 			}
 			else if (current == max) {
-				r.hide();
-				l.show();
+				r.fadeOut("slow");
+				l.fadeIn("slow");
 			}
 		});
 	});
