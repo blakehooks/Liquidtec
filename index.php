@@ -11,7 +11,7 @@ var shown = 1;
 var slide_time;
 
 function imageload(id) {
-	image_loaded++;
+	images_loaded++;
 	if (images_loaded == total_slides) {
 		$('#slide_1').show();
 		if (total_slides > 1) {
