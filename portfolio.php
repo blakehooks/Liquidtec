@@ -16,9 +16,12 @@ include('includes/nav.inc');
 			</div>
 		</div>
 		<div id="photo_specs">
-			<span>Test</span><br />
-			<span>Test a second time</span><br />
-			<span>Test a third time</span><br />
+			<div>Intel Core i5 3570K</div>
+			<div>Gigabyte GA-277 Motherboard</div>
+			<div>8 GB Corsair Vengeance</div>
+			<div>EVGA GeForce GTX 570</div>
+			<div>1 TB HDD</div>
+			<div>Windows 8 Professional with Media Center</div>
 		</div>
 	</div> <!-- photograd -->
 </div> <!-- photocontain -->
