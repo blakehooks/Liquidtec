@@ -446,6 +446,7 @@ a.nav_items:active {
 	width:1110px;
 	margin-right:auto;
 	margin-left:auto;
+	position:relative;
 	
 	background: #272727; /* Old browsers */
 	background: -moz-linear-gradient(top, #272727 0%, #000000 100%); /* FF3.6+ */
@@ -458,29 +459,38 @@ a.nav_items:active {
 }
 #photo_head {
 	height:96px;
-	width:640px;
+	width:639px;
 	background-image:url('../images/photo/photo_head.png');
+	position:absolute;
+	top:40px;
+	z-index:1;
 }
 #photo_current {
 	float:left;
-	margin-left:25px;
+	margin-left:50px;
 }
 #main_photo {
 	width:645px;
 	height:370px;
 	background-color:#c1c1c1;
+	position:relative;
+	margin-top:50px;
 }
 #side_photo {
-
+	height:96px;
+	width:639px;
+	background-image:url('../images/photo/photo_head.png');
+	position:relative;
 }
 #photo_specs {
 	float:right;
+	margin-right:35px;
 
 	border-style:solid;
 	border-width:3px;
 	border-color:#a9a9a9;
 	height:400px;
-	width:250px;
+	width:300px;
 	
 	-moz-border-radius:15px;
 	-webkit-border-radius:15px;
