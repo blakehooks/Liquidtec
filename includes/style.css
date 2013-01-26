@@ -462,7 +462,7 @@ a.nav_items:active {
 	width:639px;
 	background-image:url('../images/photo/photo_head.png');
 	position:absolute;
-	top:40px;
+	top:20px;
 	z-index:1;
 }
 #photo_current {
@@ -474,17 +474,19 @@ a.nav_items:active {
 	height:370px;
 	background-color:#c1c1c1;
 	position:relative;
-	margin-top:50px;
+	margin-top:85px;
 }
 #side_photo {
 	height:96px;
 	width:639px;
 	background-image:url('../images/photo/photo_head.png');
 	position:relative;
+	top:30px;
 }
 #photo_specs {
 	float:right;
 	margin-right:35px;
+	margin-top:50px;
 
 	border-style:solid;
 	border-width:3px;
