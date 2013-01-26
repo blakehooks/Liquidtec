@@ -4,6 +4,22 @@ include('includes/head.inc');
 $nav = 3;
 include('includes/nav.inc'); 
 ?>
+<div id="photo_contain">
+	<div id="photo_grad">
+		<div id="photo_head">
+		</div>
+		<div id="photo_current">
+			<div id="main_photo">
+			</div>
+			<div id="side_photo">
+			</div>
+		</div>
+		<div id="photo_specs">
+		</div>
+	</div> <!-- photograd -->
+</div> <!-- photocontain -->
+
+<!--
 <h1>Portfolio</h1>
 				<h3>
 	CustoHack Build 1</h3>
@@ -106,4 +122,5 @@ include('includes/nav.inc');
 	1 TB HDD<br />
 	WIndows 7 Ultimate&nbsp;</p>
 </pre>
+-->
 <?php include('includes/foot.inc');?>
