@@ -7,6 +7,7 @@ include('includes/nav.inc');
 <div id="photo_contain">
 	<div id="photo_grad">
 		<div id="photo_head">
+			<span>Custom Gaming Rig Mid 2012</span>
 		</div>
 		<div id="photo_current">
 			<div id="main_photo">
@@ -15,6 +16,9 @@ include('includes/nav.inc');
 			</div>
 		</div>
 		<div id="photo_specs">
+			Test<br />
+			Test a second time<br />
+			Test a third time<br />
 		</div>
 	</div> <!-- photograd -->
 </div> <!-- photocontain -->
