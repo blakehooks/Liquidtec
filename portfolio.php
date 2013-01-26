@@ -16,9 +16,9 @@ include('includes/nav.inc');
 			</div>
 		</div>
 		<div id="photo_specs">
-			Test<br />
-			Test a second time<br />
-			Test a third time<br />
+			<span>Test</span><br />
+			<span>Test a second time</span><br />
+			<span>Test a third time</span><br />
 		</div>
 	</div> <!-- photograd -->
 </div> <!-- photocontain -->
