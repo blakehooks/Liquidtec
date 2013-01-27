@@ -27,27 +27,28 @@ include('includes/nav.inc');
 			}
 		},
 		change_set: function() {
-			if (current_set > 0) { // checks if not initial
+			if (this.current_set > 0) { // checks if not initial
 			$('.set' + this.current_set).hide(); // hides current set
 			}
-			if (current_set >= total_set) { // checks if at max
-				current_set = 0;
+			if (this.current_set >= this.total_set) { // checks if at max
+				this.current_set = 0;
 			}
 			this.current_set++; // gets new set
 			this.set_size = $('.set' + this.current_set).length / 2; // finds new set size
 			if (this.set_size <= 3) { // ensures the small pictures will fit and shows amount accordingly.
 				for (i=1;i<=this.set_size;i++) {
-					$('#m'+current_set+'_'+i).show();
+					$('#m'+this.current_set+'_'+i).show();
 				}
 			}
 			else {
-				$('#m'+current_set+'_1').show();
-				$('#m'+current_set+'_2').show();
-				$('#m'+current_set+'_3').show();
+				$('#m'+this.current_set+'_1').show();
+				$('#m'+this.current_set+'_2').show();
+				$('#m'+this.current_set+'_3').show();
 			}
-			$('#'+current_set+'_1').show(); // shows the first image on the main slider.
+			$('#'+this.current_set+'_1').show(); // shows the first image on the main slider.
+			this.current_picture = 1;
 			
-		},
+		}
 	};
 	photo_gallery.init();
 	
