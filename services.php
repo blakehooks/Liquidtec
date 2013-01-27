@@ -54,6 +54,93 @@ include('includes/nav.inc');
 
 				<h2>
 	Repair Services</h2>
+	
+	
+	
+	
+	 <div id="content1">
+   <div class="hold">
+   
+    
+   
+   </div>
+    <div class="wat-bg">
+    <p class="wat-head">Computer Services</p>
+    <div class="wat-order">
+         <div class="wat-name">
+           <p class="wat-link1">Software Install</p>
+          </div>
+          <div class="wat-line"></div>
+          <div class="money">$ 5</div>
+     </div>
+     
+     <div class="wat-order">
+         <div class="wat-name">
+           <p class="wat-link1">Dusting/Physical Cleaning (minor)</p>
+       </div>
+          <div class="wat-line"></div>
+          <div class="money">$ 15</div>
+     </div>
+     
+     <div class="wat-order">
+         <div class="wat-name">
+           <p class="wat-link1">Minor Component Install</p>
+       </div>
+          <div class="wat-line"></div>
+          <div class="money">$ 15</div>
+     </div>
+
+     <div class="wat-order">
+         <div class="wat-name">
+           <p class="wat-link1">Major Component Install</p>
+       </div>
+          <div class="wat-line"></div>
+          <div class="money">$ 25</div>
+     </div>
+     
+     <div class="wat-order">
+         <div class="wat-name">
+           <p class="wat-link1">Tuneup</p>
+       </div>
+          <div class="wat-line"></div>
+          <div class="money">$ 25</div>
+     </div>
+
+ <div class="wat-order">
+         <div class="wat-name">
+           <p class="wat-link1">Major Laptop Physical Cleaning</p>
+       </div>
+          <div class="wat-line"></div>
+          <div class="money">$ 30</div>
+     </div>
+
+ <div class="wat-order">
+         <div class="wat-name">
+           <p class="wat-link1">Virus Removal</p>
+       </div>
+          <div class="wat-line"></div>
+          <div class="money">$ 40</div>
+     </div>
+
+ <div class="wat-order">
+         <div class="wat-name">
+           <p class="wat-link1">System Wipe</p>
+       </div>
+          <div class="wat-line"></div>
+          <div class="money">$ 50</div>
+     </div>
+
+    </div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 <p>
 	&nbsp;</p>
 <h4>
