@@ -224,6 +224,44 @@ include('includes/nav.inc');
 </div>
 	
 	
+	
+ </div>
+    <div class="wat-bg">
+    <p class="wat-head">Misc. Fees</p>
+    <div class="wat-order">
+         <div class="wat-name">
+           <p class="wat-link1">20KM Distance</p>
+          </div>
+          <div class="wat-line"></div>
+          <div class="money">$ 50</div>
+     </div>
+     
+     <div class="wat-order">
+         <div class="wat-name">
+           <p class="wat-link1">20KM Distance</p>
+       </div>
+          <div class="wat-line"></div>
+          <div class="money">$ 50</div>
+     </div>
+     
+     <div class="wat-order">
+         <div class="wat-name">
+           <p class="wat-link1">Diagnostic Fee</p>
+       </div>
+          <div class="wat-line"></div>
+          <div class="money">$ 15</div>
+     </div>
+
+     <div class="wat-order">
+         <div class="wat-name">
+           <p class="wat-link1">Computer Recycling</p>
+       </div>
+          <div class="wat-line"></div>
+          <div class="money"><b>FREE</b></div>
+     </div>
+
+    </div>	
+	
 <!-- <p>
 	&nbsp;</p> -->
 <h4>
