@@ -133,7 +133,111 @@ include('includes/nav.inc');
     </div>
 	
 	
-	
+    
+     <div class="wat-bg">
+    <p class="wat-head">Hackintosh</p>
+    <div class="wat-order">
+         <div class="wat-name">
+           <p class="wat-link1">Consultation/Estimate</p>
+          </div>
+          <div class="wat-line"></div>
+          <div class="money">$ 20</div>
+     </div>
+     
+     <div class="wat-order">
+         <div class="wat-name">
+           <p class="wat-link1">Data Migration</p>
+       </div>
+          <div class="wat-line"></div>
+          <div class="money">$ 20</div>
+     </div>
+     
+     <div class="wat-order">
+         <div class="wat-name">
+           <p class="wat-link1">Software Installation/Updates</p>
+       </div>
+          <div class="wat-line"></div>
+          <div class="money">$ 20</div>
+     </div>
+
+     <div class="wat-order">
+         <div class="wat-name">
+           <p class="wat-link1">Kext Install</p>
+       </div>
+          <div class="wat-line"></div>
+          <div class="money">$ 25</div>
+     </div>
+     
+     <div class="wat-order">
+         <div class="wat-name">
+           <p class="wat-link1">OS X 10.8.x Install</p>
+       </div>
+          <div class="wat-line"></div>
+          <div class="money">$ 50</div>
+     </div>
+
+
+ <div class="wat-order">
+         <div class="wat-name">
+           <p class="wat-link1">System Assembly</p>
+       </div>
+          <div class="wat-line"></div>
+          <div class="money">$ 50</div>
+     </div>
+
+    </div>
+       
+
+
+
+
+
+
+
+
+     <div class="wat-bg">
+    <p class="wat-head">Custom Build Services</p>
+    <div class="wat-order">
+         <div class="wat-name">
+           <p class="wat-link1">Consultation/Estimate</p>
+          </div>
+          <div class="wat-line"></div>
+          <div class="money">$ 20</div>
+     </div>
+     
+     <div class="wat-order">
+         <div class="wat-name">
+           <p class="wat-link1">Data Migration</p>
+       </div>
+          <div class="wat-line"></div>
+          <div class="money">$ 20</div>
+     </div>
+     
+     <div class="wat-order">
+         <div class="wat-name">
+           <p class="wat-link1">Driver Install</p>
+       </div>
+          <div class="wat-line"></div>
+          <div class="money">$ 25</div>
+     </div>
+
+     <div class="wat-order">
+         <div class="wat-name">
+           <p class="wat-link1">Operating System Install</p>
+       </div>
+          <div class="wat-line"></div>
+          <div class="money">$ 50</div>
+     </div>
+     
+     <div class="wat-order">
+         <div class="wat-name">
+           <p class="wat-link1">System Assembly</p>
+       </div>
+          <div class="wat-line"></div>
+          <div class="money">$ 50</div>
+     </div>
+
+    </div>	
 	
 	
 	
