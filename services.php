@@ -297,5 +297,6 @@ include('includes/nav.inc');
 <p>
 	We pride ourselves on our service. Plain and simple. If we can&#39;t resolve the issue, you don&#39;t pay*</p>
 <p>
-	We also strive to remain competitive. If you find a less expensive advertised price; we&#39;ll beat it! Just bring us the ad.</p>
+We also strive to remain competitive. If you find a less expensive advertised price; we&#39;ll beat it! Just bring us the ad.</p>
+</br>
 <?php include('includes/foot.inc');?>
