@@ -550,7 +550,7 @@ a.nav_items:active {
 	padding-bottom:25px;
 	width:230px;
 	height:auto;
-	background-color:#ddd;
+	background-color:#ebebeb;
 }
 .wat-head{
 	float:left;
@@ -560,7 +560,7 @@ a.nav_items:active {
 	width:230px;
 	font-family:segoeL, Helvetica, sans-serif;
 	font-size:20px;
-	color:#89dfff;
+	color:#333;
 }
 .wat-order{
 	float:left;
