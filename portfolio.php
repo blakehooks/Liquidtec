@@ -38,13 +38,13 @@ $(document).ready(function(){
 			this.set_size = $('.set' + this.current_set).length / 2; // finds new set size
 			if (this.set_size <= 3) { // ensures the small pictures will fit and shows amount accordingly.
 				for (i=1;i<=this.set_size;i++) {
-					$('#m'+this.current_set+'_'+i).show();
+					$('#m'+this.current_set+'_'+i).fadeIn(1000);
 				}
 			}
 			else {
-				$('#m'+this.current_set+'_1').show();
-				$('#m'+this.current_set+'_2').show();
-				$('#m'+this.current_set+'_3').show();
+				$('#m'+this.current_set+'_1').fadeIn(1000);
+				$('#m'+this.current_set+'_2').fadeIn(1000);
+				$('#m'+this.current_set+'_3').fadeIn(1000);
 			}
 			$('#'+this.current_set+'_1').fadeIn(1000); // shows the first image on the main slider.
 			$('#m'+this.current_set+'_1').css('border', 'solid 2px #f8f8f8');
@@ -79,8 +79,8 @@ $(document).ready(function(){
 <div id="photo_contain">
 	<div id="photo_grad">
 		<div id="photo_head">
-			<span class="set1 det1">Custom Gaming Rig Mid 2012</span>
-			<span class="set2 det2">Custom Gaming Rig Mid 2012 #2</span>
+			<span class="set1 det1" style="display:none;">Custom Gaming Rig Mid 2012</span>
+			<span class="set2 det2" style="display:none;">Custom Gaming Rig Mid 2012 #2</span>
 		</div>
 		<div id="photo_current">
 			<div id="main_photo">
@@ -121,7 +121,7 @@ $(document).ready(function(){
 			<div>OCZ 600 Watt Modular PSU</div>
 			<div>120 GB SSD</div>
 			<div>1 TB HDD</div>
-			<div>WIndows 7 Ultimate </div>
+			<div>Windows 7 Ultimate </div>
 		</div>
 		</div>
 		<div id="photo_next">
