@@ -485,7 +485,7 @@ a.nav_items:active {
 	margin-left:50px;
 }
 #main_photo {
-	width:640px;
+	width:600px;
 	height:400px;
 	background-color:#c1c1c1;
 	position:relative;
@@ -501,13 +501,13 @@ a.nav_items:active {
 }
 #side_photo {
 	height:100px;
-	width:642px;
+	width:602px;
 	background-color:#c1c1c1;
 	position:relative;
 	top:30px;
 }
 #side_photo img {
-	margin-right:40px;
+	margin-left:6px;
 }
 #photo_specs {
 	float:right;
@@ -536,6 +536,14 @@ a.nav_items:active {
 	font-size:16pt;
 	color:#e3e3e3;
 	margin-bottom:18px;
+}
+#photo_next {
+	float:right;
+	margin-right:35px;
+	margin-top:50px;
+	height:75px;
+	width:150px;
+	background-color:#f8f8f8;
 }
 
 /* other tables */

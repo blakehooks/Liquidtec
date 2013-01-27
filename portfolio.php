@@ -52,6 +52,10 @@ include('includes/nav.inc');
 	};
 	photo_gallery.init();
 	
+	$('#photo_next')click(function() {
+		photo_gallery.change_set();
+	});
+		
 	});
 </script>
 
@@ -66,12 +70,20 @@ include('includes/nav.inc');
 				<img src="images/photo/custo2012_1_3_small.png" class="set1" id="1_2" style="display:none;" />
 				<img src="images/photo/custo2012_1_4_small.png" class="set1" id="1_3" style="display:none;" />
 				<img src="images/photo/custo2012_1_5_small.png" class="set1" id="1_4" style="display:none;" />
+				
+				<img src="images/photo/custo2012_2_1_small.png" class="set2" id="2_1" style="display:none;" />
+				<img src="images/photo/custo2012_2_2_small.png" class="set2" id="2_2" style="display:none;" />
+				<img src="images/photo/custo2012_2_3_small.png" class="set2" id="2_3" style="display:none;" />
 			</div>
 			<div id="side_photo">
 				<img src="images/photo/custo2012_1_2_mini.png" class="set1" id="m1_1" style="display:none;" />
 				<img src="images/photo/custo2012_1_3_mini.png" class="set1" id="m1_2" style="display:none;" />
 				<img src="images/photo/custo2012_1_4_mini.png" class="set1" id="m1_3" style="display:none;" />
 				<img src="images/photo/custo2012_1_5_mini.png" class="set1" id="m1_4" style="display:none;" />
+				
+				<img src="images/photo/custo2012_2_1_mini.png" class="set2" id="m2_1" style="display:none;" />
+				<img src="images/photo/custo2012_2_2_mini.png" class="set2" id="m2_2" style="display:none;" />
+				<img src="images/photo/custo2012_2_3_mini.png" class="set2" id="m2_3" style="display:none;" />
 			</div>
 		</div>
 		<div id="photo_specs">
@@ -81,6 +93,9 @@ include('includes/nav.inc');
 			<div>EVGA GeForce GTX 570</div>
 			<div>1 TB HDD</div>
 			<div>Windows 8 Professional with Media Center</div>
+		</div>
+		<div id="photo_next">
+			next
 		</div>
 	</div> <!-- photograd -->
 </div> <!-- photocontain -->
