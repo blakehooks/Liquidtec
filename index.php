@@ -96,7 +96,7 @@ include('includes/nav.inc');
 <img src="images/mission.png" onload="imageload(this.id);" class="slide_image" id="slide_1" alt="Our Mission" style="display:none;" />
 <img src="images/mission2.png" onload="imageload(this.id);" class="slide_image" id="slide_2" alt="Our Mission" style="display:none;" />
 <img src="images/mission3.png" onload="imageload(this.id);" class="slide_image" id="slide_3" alt="Our Mission" style="display:none;" />
-<img src="images/liquidtec_load.gif" alt="loading" id="loadgif" style="margin-top:30px;" />
+<img src="images/liquidtec_load.gif" alt="loading" id="loadgif" style="margin-top:30px; margin-left:auto; margin-right:auto;" />
 <div id="slide_frame"></div>
 </div>
 <div id="mission">
