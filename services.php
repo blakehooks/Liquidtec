@@ -285,69 +285,7 @@ include('includes/nav.inc');
 	
 <!-- <p>
 	&nbsp;</p> -->
-<h4>
-	Misc. Fees:</h4>
-<p>
-	20KM Distance: $20<br />
-	50KM Distance: $50&nbsp;<br />
-	Diagnostic Fee: $20 (waived with Complete Repair Package)<br />
-	Computer Recycling: <strong>FREE</strong></p>
-<h4>
-	Computer Services</h4>
-<p>
-	Software Install: $5<br />
-	Dusting/Physical Cleaning (minor): $15<br />
-	Minor Component Install: $15<br />
-	Major Component Install: $25<br />
-	Tuneup: $25<br />
-	Major Laptop Physical Cleaning: $30<br />
-	Virus Removal: $40<br />
-	System Wipe: $50<br />
-	Cusomization/Mod: $50</p>
-<h4>
-	Complete Repair Package: $75</h4>
-<pre>
-<p>
-	(System Wipe + Physical Cleaning + Data Backup + Peripheral Install + FREE Diag)</p></pre>
-<p>
-	&nbsp;</p>
-<h4>
-	Console Repairs</h4>
-<p>
-	Xbox 360 2 Red Lights Repair: $20</p>
-<p>
-	&nbsp;</p>
-<h4>
-	Custom Build Services</h4>
-<p>
-	Consultation/Estimate: $20 (waived with Custom Build Package) &nbsp;<br />
-	Data Migration: $20&nbsp;<br />
-	Driver Install: $25<br />
-	Operating System Install: $50&nbsp;<br />
-	System Assembly: $50</p>
-<h4>
-	Custom Build Package: $100</h4>
-<pre>
-<p>
-	(Consultation + System Assembly + O/S Install + Software + Data Migration)</p></pre>
-<p>
-	&nbsp;</p>
-<h4>
-	Custom Mac (Hackintosh) Builds</h4>
-<p>
-	Consultation/Estimate: $20 (waived with CustoHack Complete Package)&nbsp;<br />
-	Data Migration: $20<br />
-	Software Installation/Updates: $20<br />
-	Kext Install: $25<br />
-	OS X 10.8.x Install: $50&nbsp;<br />
-	System Assembly: $50</p>
-<h4>
-	CustoHack Complete (Hackintosh): $125</h4>
-<pre>
-<p>
-	(Consultation + System Assembly + O/S Install + Software + Kexts + Data Migration)</p></pre>
-<p>
-	&nbsp;</p>
+
 <h4>
 	Technology Consulting</h4>
 <p>
