@@ -5,7 +5,7 @@ $nav = 1;
 include('includes/nav.inc'); 
 ?>
 <h1>Package Services</h1>
-<div>
+<!-- <div> -->
 <div id="pricing-table" class="clear">
     <div class="plan">
         <h3>Complete Repair Package<span>$75</span></h3>      
@@ -17,6 +17,7 @@ include('includes/nav.inc');
             <li><b>FREE</b> Diag</li>         
         </ul> 
     </div>
+</div>
 
 
 
@@ -32,6 +33,7 @@ include('includes/nav.inc');
             <li>Data Migration</li>          
         </ul> 
     </div>
+</div>
 
 
 
@@ -52,85 +54,78 @@ include('includes/nav.inc');
 </div>
     </br>
 
-				<h2>
-	Repair Services</h2>
+<h2>Repair Services</h2>
 	
-	
-	
-	
-	 <div id="content1">
-   <div class="hold">
-   
-    
-   
-   </div>
-    <div class="wat-bg">
-    <p class="wat-head">Computer Services</p>
-    <div class="wat-order">
-         <div class="wat-name">
-           <p class="wat-link1">Software Install</p>
-          </div>
-          <div class="wat-line"></div>
-          <div class="money">$ 5</div>
-     </div>
-     
-     <div class="wat-order">
-         <div class="wat-name">
-           <p class="wat-link1">Dusting/Physical Cleaning (minor)</p>
-       </div>
-          <div class="wat-line"></div>
-          <div class="money">$ 15</div>
-     </div>
-     
-     <div class="wat-order">
-         <div class="wat-name">
-           <p class="wat-link1">Minor Component Install</p>
-       </div>
-          <div class="wat-line"></div>
-          <div class="money">$ 15</div>
-     </div>
+<div id="content1">
+	<div class="hold">
+			
+	</div>
+	<div class="wat-bg">
+		<p class="wat-head">Computer Services</p>
+		<div class="wat-order">
+			 <div class="wat-name">
+			   <p class="wat-link1">Software Install</p>
+			  </div>
+			  <div class="wat-line"></div>
+			  <div class="money">$ 5</div>
+		 </div>
+		 
+		 <div class="wat-order">
+				<div class="wat-name">
+				<p class="wat-link1">Dusting/Physical Cleaning (minor)</p>
+		   </div>
+				<div class="wat-line"></div>
+				<div class="money">$ 15</div>
+		 </div>
+		 
+		 <div class="wat-order">
+			<div class="wat-name">
+				<p class="wat-link1">Minor Component Install</p>
+			</div>
+				<div class="wat-line"></div>
+				<div class="money">$ 15</div>
+		 </div>
 
-     <div class="wat-order">
-         <div class="wat-name">
-           <p class="wat-link1">Major Component Install</p>
-       </div>
-          <div class="wat-line"></div>
-          <div class="money">$ 25</div>
-     </div>
-     
-     <div class="wat-order">
-         <div class="wat-name">
-           <p class="wat-link1">Tuneup</p>
-       </div>
-          <div class="wat-line"></div>
-          <div class="money">$ 25</div>
-     </div>
+		 <div class="wat-order">
+			<div class="wat-name">
+				<p class="wat-link1">Major Component Install</p>
+			</div>
+				<div class="wat-line"></div>
+				<div class="money">$ 25</div>
+		 </div>
+		 
+		<div class="wat-order">
+			<div class="wat-name">
+				<p class="wat-link1">Tuneup</p>
+			</div>
+				<div class="wat-line"></div>
+				<div class="money">$ 25</div>
+		</div>
 
- <div class="wat-order">
-         <div class="wat-name">
-           <p class="wat-link1">Major Laptop Physical Cleaning</p>
-       </div>
-          <div class="wat-line"></div>
-          <div class="money">$ 30</div>
-     </div>
+		<div class="wat-order">
+			 <div class="wat-name">
+			   <p class="wat-link1">Major Laptop Physical Cleaning</p>
+		   </div>
+			  <div class="wat-line"></div>
+			  <div class="money">$ 30</div>
+		 </div>
 
- <div class="wat-order">
-         <div class="wat-name">
-           <p class="wat-link1">Virus Removal</p>
-       </div>
-          <div class="wat-line"></div>
-          <div class="money">$ 40</div>
-     </div>
+		<div class="wat-order">
+			 <div class="wat-name">
+			   <p class="wat-link1">Virus Removal</p>
+		   </div>
+			  <div class="wat-line"></div>
+			  <div class="money">$ 40</div>
+		 </div>
+		<div class="wat-order">
+			 <div class="wat-name">
+			   <p class="wat-link1">System Wipe</p>
+		   </div>
+			  <div class="wat-line"></div>
+			  <div class="money">$ 50</div>
+		 </div>
 
- <div class="wat-order">
-         <div class="wat-name">
-           <p class="wat-link1">System Wipe</p>
-       </div>
-          <div class="wat-line"></div>
-          <div class="money">$ 50</div>
-     </div>
-
-    </div>
+	</div>
 	
 	
     
@@ -186,13 +181,6 @@ include('includes/nav.inc');
      </div>
 
     </div>
-       
-
-
-
-
-
-
 
 
      <div class="wat-bg">
@@ -238,15 +226,11 @@ include('includes/nav.inc');
      </div>
 
     </div>	
+</div>
 	
 	
-	
-	
-	
-	
-	
-<p>
-	&nbsp;</p>
+<!-- <p>
+	&nbsp;</p> -->
 <h4>
 	Misc. Fees:</h4>
 <p>
