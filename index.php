@@ -14,6 +14,7 @@ function imageload(id) {
 	if (images_loaded == $('.slide_image').length) {
 		$('#slide_1').show();
 		if (images_loaded > 1) {
+			$('#loadgif').fadeOut(1000);
 			slide_time = setInterval(change_slide, 10000);
 		}
 	}
@@ -95,6 +96,7 @@ include('includes/nav.inc');
 <img src="images/mission.png" onload="imageload(this.id);" class="slide_image" id="slide_1" alt="Our Mission" style="display:none;" />
 <img src="images/mission2.png" onload="imageload(this.id);" class="slide_image" id="slide_2" alt="Our Mission" style="display:none;" />
 <img src="images/mission3.png" onload="imageload(this.id);" class="slide_image" id="slide_3" alt="Our Mission" style="display:none;" />
+<img src="images/liquidtec_load.gif" alt="loading" id="loadgif" style="margin-top:30px;" />
 <div id="slide_frame"></div>
 </div>
 <div id="mission">
