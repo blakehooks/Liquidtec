@@ -5,7 +5,7 @@ $nav = 3;
 include('includes/nav.inc'); 
 ?>
 <script type="text/javascript">
-	$(document).ready(function(){	
+$(document).ready(function(){	
 	var photo_gallery = {
 		// initializing all variables
 		total_set: 0,
@@ -65,11 +65,13 @@ include('includes/nav.inc');
 	$('#photo_next').click(function() {
 		photo_gallery.change_set();
 	});
-		
+	$('set'+photo_gallery.current_set).click(function() {
+		if (this.id.toLowerCase().indexOf("m") >= 0) {
+			photo_gallery.change_id(this.id);
+		}
 	});
-	function loadchange(id) {
-		photo_gallery.change_id(id);
-	}
+		
+});
 </script>
 
 <div id="photo_contain">
@@ -89,14 +91,14 @@ include('includes/nav.inc');
 				<img src="images/photo/custo2012_2_3_small.png" class="set2" id="2_3" style="display:none;" />
 			</div>
 			<div id="side_photo">
-				<img src="images/photo/custo2012_1_2_mini.png" class="set1" onclick="loadchange(this.id);" id="m1_1" style="display:none;" />
-				<img src="images/photo/custo2012_1_3_mini.png" class="set1" onclick="loadchange(this.id);"id="m1_2" style="display:none;" />
-				<img src="images/photo/custo2012_1_4_mini.png" class="set1" onclick="loadchange(this.id);"id="m1_3" style="display:none;" />
-				<img src="images/photo/custo2012_1_5_mini.png" class="set1" onclick="loadchange(this.id);"id="m1_4" style="display:none;" />
+				<img src="images/photo/custo2012_1_2_mini.png" class="set1" id="m1_1" style="display:none;" />
+				<img src="images/photo/custo2012_1_3_mini.png" class="set1" id="m1_2" style="display:none;" />
+				<img src="images/photo/custo2012_1_4_mini.png" class="set1" id="m1_3" style="display:none;" />
+				<img src="images/photo/custo2012_1_5_mini.png" class="set1" id="m1_4" style="display:none;" />
 				
-				<img src="images/photo/custo2012_2_1_mini.png" class="set2" onclick="loadchange(this.id);"id="m2_1" style="display:none;" />
-				<img src="images/photo/custo2012_2_2_mini.png" class="set2" onclick="loadchange(this.id);"id="m2_2" style="display:none;" />
-				<img src="images/photo/custo2012_2_3_mini.png" class="set2" onclick="loadchange(this.id);"id="m2_3" style="display:none;" />
+				<img src="images/photo/custo2012_2_1_mini.png" class="set2" id="m2_1" style="display:none;" />
+				<img src="images/photo/custo2012_2_2_mini.png" class="set2" id="m2_2" style="display:none;" />
+				<img src="images/photo/custo2012_2_3_mini.png" class="set2" id="m2_3" style="display:none;" />
 			</div>
 		</div>
 		<div id="photo_specs">
