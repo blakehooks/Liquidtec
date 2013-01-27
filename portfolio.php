@@ -5,7 +5,7 @@ $nav = 3;
 include('includes/nav.inc'); 
 ?>
 <script type="text/javascript">
-	$(document).ready(function(){	
+//	$(document).ready(function(){	
 	var photo_gallery = {
 		// initializing all variables
 		total_set: 0,
@@ -66,7 +66,7 @@ include('includes/nav.inc');
 		photo_gallery.change_set();
 	});
 		
-	});
+//	});
 </script>
 
 <div id="photo_contain">
