@@ -282,7 +282,7 @@ include('includes/nav.inc');
      </div>
 
     </div>
-	
+	</br>
 <!-- <p>
 	&nbsp;</p> -->
 
