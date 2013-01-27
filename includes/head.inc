@@ -21,6 +21,7 @@ if($extra_head) {
 ?>
 <!-- roboto -->
 <link rel="stylesheet" type="text/css" href="fonts/roboto.css" />
+<script src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
 </head>
 <body>
 <!--[if lt IE 8]>

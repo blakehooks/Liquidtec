@@ -4,6 +4,56 @@ include('includes/head.inc');
 $nav = 3;
 include('includes/nav.inc'); 
 ?>
+<script type="text/javascript">
+	$(document).ready(function(){	
+	var photo_gallery = {
+		// initializing all variables
+		total_set: 0,
+		set_size: 0,
+		current_set: 0,
+		current_picture: 0,
+		init: function() {
+			this.count_set();
+			if (this.total_set > 0) { // checks to see if there are any sets
+				this.set_size = $('.set1').length / 2; // divides by two because mini and normal
+				this.change_set();
+			}
+		},
+		count_set: function() {
+			this.total_set = 0;
+			var i = 0;
+			while ($('.set' + ++i).length > 0) {
+				this.total_set++;
+			}
+		},
+		change_set: function() {
+			if (current_set > 0) { // checks if not initial
+			$('.set' + this.current_set).hide(); // hides current set
+			}
+			if (current_set >= total_set) { // checks if at max
+				current_set = 0;
+			}
+			this.current_set++; // gets new set
+			this.set_size = $('.set' + this.current_set).length / 2; // finds new set size
+			if (this.set_size <= 3) { // ensures the small pictures will fit and shows amount accordingly.
+				for (i=1;i<=this.set_size;i++) {
+					$('#m'+current_set+'_'+i).show();
+				}
+			}
+			else {
+				$('#m'+current_set+'_1').show();
+				$('#m'+current_set+'_2').show();
+				$('#m'+current_set+'_3').show();
+			}
+			$('#'+current_set+'_1').show(); // shows the first image on the main slider.
+			
+		},
+	};
+	photo_gallery.init();
+	
+	});
+</script>
+
 <div id="photo_contain">
 	<div id="photo_grad">
 		<div id="photo_head">
@@ -11,8 +61,16 @@ include('includes/nav.inc');
 		</div>
 		<div id="photo_current">
 			<div id="main_photo">
+				<img src="images/photo/custo2012_1_2_small.png" class="set1" id="1_1" style="display:none;" />
+				<img src="images/photo/custo2012_1_3_small.png" class="set1" id="1_2" style="display:none;" />
+				<img src="images/photo/custo2012_1_4_small.png" class="set1" id="1_3" style="display:none;" />
+				<img src="images/photo/custo2012_1_5_small.png" class="set1" id="1_4" style="display:none;" />
 			</div>
 			<div id="side_photo">
+				<img src="images/photo/custo2012_1_2_mini.png" class="set1" id="m1_1" style="display:none;" />
+				<img src="images/photo/custo2012_1_3_mini.png" class="set1" id="m1_2" style="display:none;" />
+				<img src="images/photo/custo2012_1_4_mini.png" class="set1" id="m1_3" style="display:none;" />
+				<img src="images/photo/custo2012_1_5_mini.png" class="set1" id="m1_4" style="display:none;" />
 			</div>
 		</div>
 		<div id="photo_specs">

@@ -506,6 +506,9 @@ a.nav_items:active {
 	position:relative;
 	top:30px;
 }
+#side_photo img {
+	margin-right:40px;
+}
 #photo_specs {
 	float:right;
 	margin-right:35px;

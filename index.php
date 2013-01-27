@@ -2,7 +2,6 @@
 $extra_head = '<link rel="stylesheet" type="text/css" href="includes/style.css" />';
 include('includes/head.inc');
 ?>
-<script src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
 
 <script type="text/javascript">
 // var total_slides = 3;
