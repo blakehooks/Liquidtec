@@ -52,7 +52,7 @@ include('includes/nav.inc');
 	};
 	photo_gallery.init();
 	
-	$('#photo_next')click(function() {
+	$('#photo_next').click(function() {
 		photo_gallery.change_set();
 	});
 		
