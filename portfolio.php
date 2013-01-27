@@ -65,7 +65,7 @@ $(document).ready(function(){
 	$('#photo_next').click(function() {
 		photo_gallery.change_set();
 	});
-	$('set'+photo_gallery.current_set).click(function() {
+	$('.set'+photo_gallery.current_set).click(function() {
 		if (this.id.toLowerCase().indexOf("m") >= 0) {
 			photo_gallery.change_id(this.id);
 		}
