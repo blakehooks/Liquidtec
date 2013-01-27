@@ -49,6 +49,9 @@ $(document).ready(function(){
 			$('#'+this.current_set+'_1').fadeIn(1500); // shows the first image on the main slider.
 			$('#m'+this.current_set+'_1').css('border', 'solid 2px #f8f8f8');
 			this.current_picture = this.current_set+'_1';
+			
+			$('#spec'+this.current_set).fadeIn(1000); // changes the specs
+			
 		},
 		change_id: function(id) {
 			id = id.replace(/m/, '');
@@ -57,6 +60,7 @@ $(document).ready(function(){
 				$('#m'+this.current_picture).css('border', '');
 				$('#'+id).fadeIn(1500);
 				$('#m'+id).css('border', 'solid 2px #f8f8f8');
+				this.current_picture = id;
 			}
 		}
 	};
@@ -102,12 +106,24 @@ $(document).ready(function(){
 			</div>
 		</div>
 		<div id="photo_specs">
+		<div class="set1" id="spec1" style="display:none;">
 			<div>Intel Core i5 3570K</div>
 			<div>Gigabyte GA-277 Motherboard</div>
 			<div>8 GB Corsair Vengeance</div>
 			<div>EVGA GeForce GTX 570</div>
 			<div>1 TB HDD</div>
 			<div>Windows 8 Professional with Media Center</div>
+		</div>
+		<div class="set2" id="spec2" style="display:none;">
+			<div>Intel Core i5 - 2500K</div>
+			<div>ASUS P8z77 Motherboard</div>
+			<div>EVGA GeForce 570 CLASSIFIED Edition</div>
+			<div>8 GB RAM</div>
+			<div>OCZ 600 Watt Modular PSU</div>
+			<div>120 GB SSD</div>
+			<div>1 TB HDD</div>
+			<div>WIndows 7 Ultimate </div>
+		</div>
 		</div>
 		<div id="photo_next">
 			next
