@@ -69,10 +69,8 @@ $(document).ready(function(){
 	$('#photo_next').click(function() {
 		photo_gallery.change_set();
 	});
-	$('.set'+photo_gallery.current_set).click(function() {
-		if (this.id.toLowerCase().indexOf("m") >= 0) {
+	$('.mini').click(function() {
 			photo_gallery.change_id(this.id);
-		}
 	});
 		
 });
@@ -95,14 +93,14 @@ $(document).ready(function(){
 				<img src="images/photo/custo2012_2_3_small.png" class="set2" id="2_3" style="display:none;" />
 			</div>
 			<div id="side_photo">
-				<img src="images/photo/custo2012_1_2_mini.png" class="set1" id="m1_1" style="display:none;" />
-				<img src="images/photo/custo2012_1_3_mini.png" class="set1" id="m1_2" style="display:none;" />
-				<img src="images/photo/custo2012_1_4_mini.png" class="set1" id="m1_3" style="display:none;" />
-				<img src="images/photo/custo2012_1_5_mini.png" class="set1" id="m1_4" style="display:none;" />
+				<img src="images/photo/custo2012_1_2_mini.png" class="set1 mini" id="m1_1" style="display:none;" />
+				<img src="images/photo/custo2012_1_3_mini.png" class="set1 mini" id="m1_2" style="display:none;" />
+				<img src="images/photo/custo2012_1_4_mini.png" class="set1 mini" id="m1_3" style="display:none;" />
+				<img src="images/photo/custo2012_1_5_mini.png" class="set1 mini" id="m1_4" style="display:none;" />
 				
-				<img src="images/photo/custo2012_2_1_mini.png" class="set2" id="m2_1" style="display:none;" />
-				<img src="images/photo/custo2012_2_2_mini.png" class="set2" id="m2_2" style="display:none;" />
-				<img src="images/photo/custo2012_2_3_mini.png" class="set2" id="m2_3" style="display:none;" />
+				<img src="images/photo/custo2012_2_1_mini.png" class="set2 mini" id="m2_1" style="display:none;" />
+				<img src="images/photo/custo2012_2_2_mini.png" class="set2 mini" id="m2_2" style="display:none;" />
+				<img src="images/photo/custo2012_2_3_mini.png" class="set2 mini" id="m2_3" style="display:none;" />
 			</div>
 		</div>
 		<div id="photo_specs">
