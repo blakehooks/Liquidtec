@@ -5,54 +5,49 @@ $nav = 1;
 include('includes/nav.inc'); 
 ?>
 <h1>Package Services</h1>
-<!-- <div> -->
-<div id="pricing-table" class="clear">
-    <div class="plan">
-        <h3>Complete Repair Package<span>$75</span></h3>      
-        <ul>
-            <li>System Wipe</li>
-            <li>Physical Cleaning</li>
-            <li>Data Backup</li>
-	        <li>Peripheral Install</li>			
-            <li><b>FREE</b> Diag</li>         
-        </ul> 
-    </div>
-</div>
+	<div id="pricing-table" class="clear">
+		<div class="plan">
+			<h3>Complete Repair Package<span>$75</span></h3>      
+			<ul>
+				<li>System Wipe</li>
+				<li>Physical Cleaning</li>
+				<li>Data Backup</li>
+				<li>Peripheral Install</li>			
+				<li><b>FREE</b> Diag</li>         
+			</ul> 
+		</div>
 
 
 
-<div id="pricing-table" class="clear">
-    <div class="plan">
-        <h3>Custom Build Package<span>$100</span></h3>
-     
-        <ul>
-            <li>Consultation</li>
-            <li>System Assembly</li>
-            <li>O/S Install</li>
-            <li>Software</li> 
-            <li>Data Migration</li>          
-        </ul> 
-    </div>
-</div>
+		<div class="plan">
+			<h3>Custom Build Package<span>$100</span></h3>
+		 
+			<ul>
+				<li>Consultation</li>
+				<li>System Assembly</li>
+				<li>O/S Install</li>
+				<li>Software</li> 
+				<li>Data Migration</li>          
+			</ul> 
+		</div>
 
 
 
 
-<div id="pricing-table" class="clear">
-    <div class="plan">
-        <h3>CustoHack (Hackintosh)<span>$125</span></h3>
-       
-        <ul>
-            <li>Consultation </li>
-            <li>System Assembly</li>
-            <li>O/S Install</li>
-            <li>Software</li>   
-            <li>Kexts</li> 
-            <li>Data Migration</li>            
-        </ul> 
-    </div>
-</div>
-    </br>
+		<div class="plan">
+			<h3>CustoHack (Hackintosh)<span>$125</span></h3>
+		   
+			<ul>
+				<li>Consultation </li>
+				<li>System Assembly</li>
+				<li>O/S Install</li>
+				<li>Software</li>   
+				<li>Kexts</li> 
+				<li>Data Migration</li>            
+			</ul> 
+		</div>
+	</div>
+<br />
 
 <h2>Repair Services</h2>
 	
