@@ -28,6 +28,7 @@ include('includes/nav.inc');
 		},
 		change_set: function() {
 			if (this.current_set > 0) { // checks if not initial
+			$('.set' + this.current_set).css('border', ''); // removes any mini borders if any
 			$('.set' + this.current_set).hide(); // hides current set
 			}
 			if (this.current_set >= this.total_set) { // checks if at max
@@ -45,9 +46,18 @@ include('includes/nav.inc');
 				$('#m'+this.current_set+'_2').show();
 				$('#m'+this.current_set+'_3').show();
 			}
-			$('#'+this.current_set+'_1').show(); // shows the first image on the main slider.
-			this.current_picture = 1;
-			
+			$('#'+this.current_set+'_1').fadeIn(1500); // shows the first image on the main slider.
+			$('#m'+this.current_set+'_1').css('border', 'solid 2px #f8f8f8');
+			this.current_picture = this.current_set+'_1';
+		},
+		change_id: function(id) {
+			id = id.replace(/m/, '');
+			if (id != this.current_picture) {
+				$('#'+this.current_picture).hide();
+				$('#m'+this.current_picture).css('border', '');
+				$('#'+id).fadeIn(1500);
+				$('#m'+id).css('border', 'solid 2px #f8f8f8');
+			}
 		}
 	};
 	photo_gallery.init();
@@ -76,14 +86,14 @@ include('includes/nav.inc');
 				<img src="images/photo/custo2012_2_3_small.png" class="set2" id="2_3" style="display:none;" />
 			</div>
 			<div id="side_photo">
-				<img src="images/photo/custo2012_1_2_mini.png" class="set1" id="m1_1" style="display:none;" />
-				<img src="images/photo/custo2012_1_3_mini.png" class="set1" id="m1_2" style="display:none;" />
-				<img src="images/photo/custo2012_1_4_mini.png" class="set1" id="m1_3" style="display:none;" />
-				<img src="images/photo/custo2012_1_5_mini.png" class="set1" id="m1_4" style="display:none;" />
+				<img src="images/photo/custo2012_1_2_mini.png" class="set1" onclick="photo_gallery.change_id(this.id);" id="m1_1" style="display:none;" />
+				<img src="images/photo/custo2012_1_3_mini.png" class="set1" onclick="photo_gallery.change_id(this.id);"id="m1_2" style="display:none;" />
+				<img src="images/photo/custo2012_1_4_mini.png" class="set1" onclick="photo_gallery.change_id(this.id);"id="m1_3" style="display:none;" />
+				<img src="images/photo/custo2012_1_5_mini.png" class="set1" onclick="photo_gallery.change_id(this.id);"id="m1_4" style="display:none;" />
 				
-				<img src="images/photo/custo2012_2_1_mini.png" class="set2" id="m2_1" style="display:none;" />
-				<img src="images/photo/custo2012_2_2_mini.png" class="set2" id="m2_2" style="display:none;" />
-				<img src="images/photo/custo2012_2_3_mini.png" class="set2" id="m2_3" style="display:none;" />
+				<img src="images/photo/custo2012_2_1_mini.png" class="set2" onclick="photo_gallery.change_id(this.id);"id="m2_1" style="display:none;" />
+				<img src="images/photo/custo2012_2_2_mini.png" class="set2" onclick="photo_gallery.change_id(this.id);"id="m2_2" style="display:none;" />
+				<img src="images/photo/custo2012_2_3_mini.png" class="set2" onclick="photo_gallery.change_id(this.id);"id="m2_3" style="display:none;" />
 			</div>
 		</div>
 		<div id="photo_specs">
