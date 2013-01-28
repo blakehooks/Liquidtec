@@ -26,7 +26,7 @@ $(document).ready(function(){
 				this.total_set++;
 			}
 		},
-		change_set: function() {
+		change_set: function(sign) {
 			if (this.current_set > 0) { // checks if not initial
 			$('.set' + this.current_set).css('border', ''); // removes any mini borders if any
 			$('.set' + this.current_set).hide(); // hides current set
@@ -34,7 +34,12 @@ $(document).ready(function(){
 			if (this.current_set >= this.total_set) { // checks if at max
 				this.current_set = 0;
 			}
-			this.current_set++; // gets new set
+			if (sign > 0) { // gets new set
+				this.current_set++;
+			}
+			else {
+				this.current_set--;
+			}
 			this.set_size = $('.set' + this.current_set).length / 2; // finds new set size
 			if (this.set_size <= 3) { // ensures the small pictures will fit and shows amount accordingly.
 				for (i=1;i<=this.set_size;i++) {
@@ -65,9 +70,11 @@ $(document).ready(function(){
 		}
 	};
 	photo_gallery.init();
-	
+	$('#photo_previous').click(function() {
+		photo_gallery.change_set(0);
+	});
 	$('#photo_next').click(function() {
-		photo_gallery.change_set();
+		photo_gallery.change_set(1);
 	});
 	$('.mini').click(function() {
 		photo_gallery.change_id(this.id);

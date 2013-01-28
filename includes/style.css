@@ -550,7 +550,7 @@ a.nav_items:active {
 	height:75px;
 	position:absolute;
 	top:0px;
-	left:0px;
+	right:0px;
 	background-color:#f8f8f8;
 }
 #photo_previous {
@@ -558,7 +558,7 @@ a.nav_items:active {
 	height:75px;
 	position:absolute;
 	top:0px;
-	right:0px;
+	left:0px;
 	background-color:#f8f8f8;
 }
 
