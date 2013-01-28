@@ -124,8 +124,13 @@ $(document).ready(function(){
 			<div>Windows 7 Ultimate </div>
 		</div>
 		</div>
-		<div id="photo_next">
-			next
+		<div id="photo_np">
+			<div id="photo_previous">
+				previous
+			</div>
+			<div id="photo_next">
+				next
+			</div>
 		</div>
 	</div> <!-- photograd -->
 </div> <!-- photocontain -->
