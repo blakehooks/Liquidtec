@@ -514,8 +514,6 @@ a.nav_items:active {
 	margin-right:35px;
 	margin-top:50px;
 	height:400px;
-		height:auto !important;
-		height:400px;
 	width:285px;
 	padding:25px;
 	background-color:#464646;
