@@ -16,7 +16,7 @@ $(document).ready(function(){
 		init: function() {
 			this.count_set();
 			if (this.total_set > 0) { // checks to see if there are any sets
-				this.set_size = $('.set1').length / 2; // divides by two because mini and normal
+				this.set_size = ($('.set1').length - 2) / 2; // divides by two because mini and normal
 				this.change_set(0);
 			}
 		},
@@ -44,7 +44,7 @@ $(document).ready(function(){
 			else if (this.current_set <= 0) { // checks if below min
 				this.current_set = this.total_set;
 			}
-			this.set_size = $('.set' + this.current_set).length / 2; // finds new set size
+			this.set_size = ($('.set' + this.current_set).length - 2) / 2; // finds new set size
 			if (this.set_size <= 3) { // ensures the small pictures will fit and shows amount accordingly.
 				for (i=1;i<=this.set_size;i++) {
 					$('#m'+this.current_set+'_'+i).fadeIn(1000);
