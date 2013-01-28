@@ -5,7 +5,8 @@ $nav = 3;
 include('includes/nav.inc'); 
 ?>
 <script type="text/javascript">
-$(document).ready(function(){	
+$(document).ready(function(){
+	var scroll_timer;
 	var photo_gallery = {
 		// initializing all variables
 		total_set: 0,
@@ -59,6 +60,7 @@ $(document).ready(function(){
 			this.current_picture = this.current_set+'_1';
 			
 			$('.det'+this.current_set).fadeIn(1000); // changes the specs
+			scroll_timer = setInterval(this.scroll_id, 6000); // adds autoscroller
 			
 		},
 		change_id: function(id) {
@@ -70,6 +72,17 @@ $(document).ready(function(){
 				$('#m'+id).css('border', 'solid 2px #f8f8f8');
 				this.current_picture = id;
 			}
+		},
+		scroll_id: function() {
+			var id = this.current_picture;
+			id = id.replace(this.current_set+'_', '');
+			id = parseInt(id);
+			if (id >= this.set_size) {
+				id = 0;
+			}
+			id++;
+			id = this.current_set+'_'+id;
+			change_id(id);
 		}
 	};
 	photo_gallery.init();
@@ -81,6 +94,7 @@ $(document).ready(function(){
 	});
 	$('.mini').click(function() {
 		photo_gallery.change_id(this.id);
+		clearInterval(scroll_timer);
 	});
 		
 });
