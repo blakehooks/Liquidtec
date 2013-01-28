@@ -75,7 +75,7 @@ $(document).ready(function(){
 		}
 	};
 	function scroll_id() {
-		var id = photo_gallery.current_picture;
+		var id = photo_gallery.current_picture; // could use simplification, but works for  now.
 		var currset = photo_gallery.current_set+'_';
 		var reg = new RegExp(currset, "g");
 		id = id.replace(reg, '');
