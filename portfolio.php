@@ -84,7 +84,7 @@ $(document).ready(function(){
 			id = 0;
 		}
 		id++;
-		id = this.current_set+'_'+id;
+		id = photo_gallery.current_set+'_'+id;
 		photo_gallery.change_id(id);
 	}
 	
