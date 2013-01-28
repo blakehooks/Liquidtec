@@ -16,7 +16,7 @@ $(document).ready(function(){
 			this.count_set();
 			if (this.total_set > 0) { // checks to see if there are any sets
 				this.set_size = $('.set1').length / 2; // divides by two because mini and normal
-				this.change_set();
+				this.change_set(0);
 			}
 		},
 		count_set: function() {
@@ -35,10 +35,10 @@ $(document).ready(function(){
 				this.current_set = 0;
 			}
 			if (sign > 0) { // gets new set
-				this.current_set++;
+				this.current_set--;
 			}
 			else {
-				this.current_set--;
+				this.current_set++;
 			}
 			this.set_size = $('.set' + this.current_set).length / 2; // finds new set size
 			if (this.set_size <= 3) { // ensures the small pictures will fit and shows amount accordingly.
@@ -71,10 +71,10 @@ $(document).ready(function(){
 	};
 	photo_gallery.init();
 	$('#photo_previous').click(function() {
-		photo_gallery.change_set(0);
+		photo_gallery.change_set(1);
 	});
 	$('#photo_next').click(function() {
-		photo_gallery.change_set(1);
+		photo_gallery.change_set(0);
 	});
 	$('.mini').click(function() {
 		photo_gallery.change_id(this.id);
