@@ -60,7 +60,7 @@ $(document).ready(function(){
 			this.current_picture = this.current_set+'_1';
 			
 			$('.det'+this.current_set).fadeIn(1000); // changes the specs
-			scroll_timer = setInterval(this.scroll_id, 6000); // adds autoscroller
+			scroll_timer = setInterval(scroll_id, 6000); // adds autoscroller
 			
 		},
 		change_id: function(id) {
@@ -72,21 +72,22 @@ $(document).ready(function(){
 				$('#m'+id).css('border', 'solid 2px #f8f8f8');
 				this.current_picture = id;
 			}
-		},
-		scroll_id: function() {
-			var id = this.current_picture;
-			var currset = this.current_set+'_';
-			var reg = new RegExp(currset, "g");
-			id = id.replace(reg, '');
-			id = parseInt(id);
-			if (id >= this.set_size) {
-				id = 0;
-			}
-			id++;
-			id = this.current_set+'_'+id;
-			change_id(id);
 		}
 	};
+	function scroll_id() {
+		var id = photo_gallery.current_picture;
+		var currset = photo_gallery.current_set+'_';
+		var reg = new RegExp(currset, "g");
+		id = id.replace(reg, '');
+		id = parseInt(id);
+		if (id >= photo_gallery.set_size) {
+			id = 0;
+		}
+		id++;
+		id = this.current_set+'_'+id;
+		photo_gallery.change_id(id);
+	}
+	
 	photo_gallery.init();
 	$('#photo_previous').click(function() {
 		photo_gallery.change_set(1);
