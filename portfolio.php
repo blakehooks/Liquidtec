@@ -31,14 +31,17 @@ $(document).ready(function(){
 			$('.set' + this.current_set).css('border', ''); // removes any mini borders if any
 			$('.set' + this.current_set).hide(); // hides current set
 			}
-			if (this.current_set >= this.total_set) { // checks if at max
-				this.current_set = 0;
-			}
 			if (sign > 0) { // gets new set
 				this.current_set--;
 			}
 			else {
 				this.current_set++;
+			}
+			if (this.current_set >= this.total_set) { // checks if at max
+				this.current_set = 1;
+			}
+			else (this.current_set <= 0) {
+				this.current_set = 1;
 			}
 			this.set_size = $('.set' + this.current_set).length / 2; // finds new set size
 			if (this.set_size <= 3) { // ensures the small pictures will fit and shows amount accordingly.
