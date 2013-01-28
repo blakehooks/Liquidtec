@@ -91,6 +91,7 @@ $(document).ready(function(){
 		<div id="photo_head">
 			<span class="set1 det1" style="display:none;">Custom Gaming Rig Mid 2012</span>
 			<span class="set2 det2" style="display:none;">Custom Gaming Rig Mid 2012 #2</span>
+			<span class="set3 det3" style="display:none;">CustoHack Early 2013</span>
 		</div>
 		<div id="photo_current">
 			<div id="main_photo">
@@ -102,6 +103,10 @@ $(document).ready(function(){
 				<img src="images/photo/custo2012_2_1_small.png" class="set2" id="2_1" style="display:none;" />
 				<img src="images/photo/custo2012_2_2_small.png" class="set2" id="2_2" style="display:none;" />
 				<img src="images/photo/custo2012_2_3_small.png" class="set2" id="2_3" style="display:none;" />
+				
+				<img src="images/photo/custo2013_1_1_small.png" class="set3" id="3_1" style="display:none;" />
+				<img src="images/photo/custo2013_1_2_small.png" class="set3" id="3_2" style="display:none;" />
+				<img src="images/photo/custo2013_1_3_small.png" class="set3" id="3_3" style="display:none;" />
 			</div>
 			<div id="side_photo">
 				<img src="images/photo/custo2012_1_2_mini.png" class="set1 mini" id="m1_1" style="display:none;" />
@@ -112,27 +117,43 @@ $(document).ready(function(){
 				<img src="images/photo/custo2012_2_1_mini.png" class="set2 mini" id="m2_1" style="display:none;" />
 				<img src="images/photo/custo2012_2_2_mini.png" class="set2 mini" id="m2_2" style="display:none;" />
 				<img src="images/photo/custo2012_2_3_mini.png" class="set2 mini" id="m2_3" style="display:none;" />
+				
+				<img src="images/photo/custo2013_1_1_mini.png" class="set3 mini" id="m3_1" style="display:none;" />
+				<img src="images/photo/custo2013_1_2_mini.png" class="set3 mini" id="m3_2" style="display:none;" />
+				<img src="images/photo/custo2013_1_3_mini.png" class="set3 mini" id="m3_3" style="display:none;" />
 			</div>
 		</div>
 		<div id="photo_specs">
-		<div class="set1 det1" style="display:none;">
-			<div>Intel Core i5 3570K</div>
-			<div>Gigabyte GA-277 Motherboard</div>
-			<div>8 GB Corsair Vengeance</div>
-			<div>EVGA GeForce GTX 570</div>
-			<div>1 TB HDD</div>
-			<div>Windows 8 Professional with Media Center</div>
-		</div>
-		<div class="set2 det2" style="display:none;">
-			<div>Intel Core i5 - 2500K</div>
-			<div>ASUS P8z77 Motherboard</div>
-			<div>EVGA GeForce 570 CLASSIFIED Edition</div>
-			<div>8 GB RAM</div>
-			<div>OCZ 600 Watt Modular PSU</div>
-			<div>120 GB SSD</div>
-			<div>1 TB HDD</div>
-			<div>Windows 7 Ultimate </div>
-		</div>
+			<div class="set1 det1" style="display:none;">
+				<div>Intel Core i5 3570K</div>
+				<div>Gigabyte GA-277 Motherboard</div>
+				<div>8 GB Corsair Vengeance</div>
+				<div>EVGA GeForce GTX 570</div>
+				<div>1 TB HDD</div>
+				<div>Windows 8 Professional with Media Center</div>
+			</div>
+			<div class="set2 det2" style="display:none;">
+				<div>Intel Core i5 - 2500K</div>
+				<div>ASUS P8z77 Motherboard</div>
+				<div>EVGA GeForce 570 CLASSIFIED Edition</div>
+				<div>8 GB RAM</div>
+				<div>OCZ 600 Watt Modular PSU</div>
+				<div>120 GB SSD</div>
+				<div>1 TB HDD</div>
+				<div>Windows 7 Ultimate </div>
+			</div>
+			<div class="set3 det3" style="display:none;">
+				<div>Intel Core i7 2600K</div>
+				<div>ASUS Republic Of Gamers</div>
+				<div>RAMPAGE Motherboard</div>
+				<div>Gigabyte GTX 480 /w Zallman Turbo-Cooler</div>
+				<div>Corsair H70 CPU Liquid Cooling Block</div>
+				<div>24 GB Corsair Vengeance RAM</div>
+				<div>5 Point Thermal/Fan Digital Controller</div>
+				<div>1200W Corsair PSU</div>
+				<div>RAID Hard Drive Array</div>
+				<div>OS X 10.8.2</div>
+			</div>
 		</div>
 		<div id="photo_np">
 			<div id="photo_previous">
