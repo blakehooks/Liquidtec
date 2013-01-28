@@ -51,7 +51,8 @@ include('includes/nav.inc');
 
 <h2>Repair Services</h2>
 	
-<div id="content1">
+<div id="buffer">
+    <div id="content1">
 	<div class="hold">
 			
 	</div>
@@ -278,6 +279,7 @@ include('includes/nav.inc');
           <div class="money">$ 50</div>
     </div>
 
+    </div>
     </div>
 	<br/>
 <!-- <p>
