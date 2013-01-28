@@ -232,8 +232,6 @@ include('includes/nav.inc');
 </div>
 	
 	
-	
- </div>
     <div class="wat-bg">
     <p class="wat-head">Misc. Fees</p>
     <div class="wat-order">
@@ -270,16 +268,15 @@ include('includes/nav.inc');
 
     </div>	
     
-    </div>
     <div class="wat-bg">
     <p class="wat-head">Console Repairs</p>
-    <div class="wat-order">
+	<div class="wat-order">
          <div class="wat-name">
            <p class="wat-link1">Xbox 360 2 Red Lights Repair</p>
           </div>
           <div class="wat-line"></div>
           <div class="money">$ 50</div>
-     </div>
+    </div>
 
     </div>
 	<br/>
