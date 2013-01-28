@@ -37,11 +37,11 @@ $(document).ready(function(){
 			else {
 				this.current_set++;
 			}
-			if (this.current_set >= this.total_set) { // checks if at max
+			if (this.current_set > this.total_set) { // checks if past max
 				this.current_set = 1;
 			}
-			else if (this.current_set <= 0) {
-				this.current_set = 1;
+			else if (this.current_set <= 0) { // checks if below min
+				this.current_set = this.total_set;
 			}
 			this.set_size = $('.set' + this.current_set).length / 2; // finds new set size
 			if (this.set_size <= 3) { // ensures the small pictures will fit and shows amount accordingly.
