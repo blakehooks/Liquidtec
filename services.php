@@ -282,7 +282,7 @@ include('includes/nav.inc');
      </div>
 
     </div>
-	</br>
+	<br/>
 <!-- <p>
 	&nbsp;</p> -->
 
@@ -300,5 +300,4 @@ include('includes/nav.inc');
 We also strive to remain competitive. If you find a less expensive advertised price; we&#39;ll beat it! Just bring us the ad.</p>
 <p>
 	&nbsp;</p>
-</br>
 <?php include('includes/foot.inc');?>
