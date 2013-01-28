@@ -40,7 +40,7 @@ $(document).ready(function(){
 			if (this.current_set >= this.total_set) { // checks if at max
 				this.current_set = 1;
 			}
-			else (this.current_set <= 0) {
+			else if (this.current_set <= 0) {
 				this.current_set = 1;
 			}
 			this.set_size = $('.set' + this.current_set).length / 2; // finds new set size
