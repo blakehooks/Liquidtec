@@ -60,6 +60,7 @@ $(document).ready(function(){
 			this.current_picture = this.current_set+'_1';
 			
 			$('.det'+this.current_set).fadeIn(1000); // changes the specs
+			clearInterval(scroll_timer);
 			scroll_timer = setInterval(scroll_id, 6000); // adds autoscroller
 			
 		},
