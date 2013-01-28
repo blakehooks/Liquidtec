@@ -556,11 +556,18 @@ a.nav_items:active {
 
 /* other tables */
 
+#buffer{
+	margin:0px auto;
+	min-width:955px;
+	width:955px;
+	height:700px;
+}
+
 #content1{
 	margin:0px auto;
 	min-width:955px;
 	width:955px;
-	height:1100px;
+	height:auto;
 }
 
 .wat-bg{
