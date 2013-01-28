@@ -75,8 +75,9 @@ $(document).ready(function(){
 		},
 		scroll_id: function() {
 			var id = this.current_picture;
-			var reg_set = new RegExp(this.current_set+'_', "g");
-			id = id.replace(reg_set, '');
+			var currset = this.current_set+'_';
+			var reg = new RegExp(currset, "g");
+			id = id.replace(reg, '');
 			id = parseInt(id);
 			if (id >= this.set_size) {
 				id = 0;
