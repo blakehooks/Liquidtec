@@ -500,11 +500,12 @@ a.nav_items:active {
 	box-shadow:1px 1px 4px #000000;
 }
 #side_photo {
-	height:125px;
+	height:130px;
 	width:602px;
 	background-color:#c1c1c1;
 	position:relative;
 	top:30px;
+	overflow-x:hidden;
 }
 #inner_side {
 	position:absolute;
