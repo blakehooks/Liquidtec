@@ -506,7 +506,14 @@ a.nav_items:active {
 	position:relative;
 	top:30px;
 }
-#side_photo img {
+#inner_side {
+	position:absolute;
+	height:125px;
+	min-width:200px;
+		width:auto !important;
+		width:200px;
+}
+#inner_side img {
 	margin-left:6px;
 }
 #photo_specs {
