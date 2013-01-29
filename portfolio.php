@@ -46,9 +46,12 @@ $(document).ready(function(){
 			}
 			this.set_size = ($('.set' + this.current_set).length - 2) / 2; // finds new set size
 			// ensures the small pictures will fit and shows amount accordingly.
-				for (i=1;i<=this.set_size;i++) {
+				var newwidth = 0;
+				for (i=1;i>=this.set_size;i++) {
 					$('#m'+this.current_set+'_'+i).fadeIn(1000);
 				}
+				i *= 200;
+				$("#inner_side").css("width", i);
 
 			$('#'+this.current_set+'_1').fadeIn(1000); // shows the first image on the main slider.
 			$('#m'+this.current_set+'_1').css('border', 'solid 2px #f8f8f8');

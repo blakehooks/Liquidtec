@@ -509,9 +509,7 @@ a.nav_items:active {
 #inner_side {
 	position:absolute;
 	height:125px;
-	min-width:200px;
-		width:auto !important;
-		width:200px;
+	width:602px;
 }
 #inner_side img {
 	margin-left:6px;
