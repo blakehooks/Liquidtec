@@ -47,7 +47,7 @@ $(document).ready(function(){
 			}
 			this.set_size = ($('.set' + this.current_set).length - 2) / 2; // finds new set size
 			// ensures the small pictures will fit and shows amount accordingly.
-				for (i=1;i<=this.set_size;i++) {
+				for (i=0;i<this.set_size;i++) {
 					$('#m'+this.current_set+'_'+i).fadeIn(1000);
 				}
 				i *= 200;
@@ -65,15 +65,17 @@ $(document).ready(function(){
 		},
 		// this is to actually change the mini row on what is shown and hidden. 
 		scroll_miniset: function(offset) {
-			var max = -($('#inner_side').width());
-				this.current_mini_slide += offset;
-				if (this.current_mini_slide < max) {
-					this.current_mini_slide = max;
-				}
-				else if (this.current_mini_slide > 0) {
-					this.current_mini_slide = 0;
-				}
-			$('#inner_side').animate({left:this.current_mini_slide},1000);
+			if (this.set_size > 3) {
+				var max = -($('#inner_side').width() - 600); // subtract sixhundred because the starting three are there.
+					this.current_mini_slide += offset;
+					if (this.current_mini_slide < max) {
+						this.current_mini_slide = max;
+					}
+					else if (this.current_mini_slide > 0) {
+						this.current_mini_slide = 0;
+					}
+				$('#inner_side').animate({left:this.current_mini_slide},1000);
+			}
 		},
 		// takes in a mini id, turns it into an id, and changes the main picture to the miniID passed.
 		change_id: function(id) {
