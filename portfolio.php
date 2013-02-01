@@ -105,6 +105,7 @@ $(document).ready(function(){
 		id = parseInt(id);
 		if (id >= photo_gallery.set_size) {
 			id = 0;
+			photo_gallery.scroll_miniset(-200); // changes the minibar to move forward with the picture.
 		}
 		id++;
 		if (id > 2) {
