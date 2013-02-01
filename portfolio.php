@@ -76,9 +76,6 @@ $(document).ready(function(){
 				else if (this.current_mini_slide > 0) {
 					this.current_mini_slide = 0;
 				}
-				else if (this.current_mini_slide == 0 || this.current_mini_slide == max) {
-					nogo = 1;
-				}
 				if (nogo == 0) {
 					$('#inner_side').animate({left:this.current_mini_slide},500);
 				}
@@ -105,7 +102,7 @@ $(document).ready(function(){
 		id = parseInt(id);
 		if (id >= photo_gallery.set_size) {
 			id = 0;
-			photo_gallery.scroll_miniset(-200); // changes the minibar to move forward with the picture.
+			photo_gallery.scroll_miniset(9000); // changes the minibar to move forward with the picture.
 		}
 		id++;
 		if (id > 2) {
