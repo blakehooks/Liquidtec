@@ -75,7 +75,7 @@ $(document).ready(function(){
 					else if (this.current_mini_slide > 0) {
 						this.current_mini_slide = 0;
 					}
-				$('#inner_side').animate({left:this.current_mini_slide},1000);
+				$('#inner_side').animate({left:this.current_mini_slide},500);
 			}
 		},
 		// takes in a mini id, turns it into an id, and changes the main picture to the miniID passed.
@@ -102,7 +102,10 @@ $(document).ready(function(){
 		}
 		id++;
 		id = photo_gallery.current_set+'_'+id;
-		photo_gallery.change_id(id);
+		photo_gallery.change_id(id); // passes it to the thing to actually change it.
+		if (id > 3) {
+			photo_gallery.scroll_miniset(-200); // changes the minibar to move forward with the picture.
+		}
 	}
 	
 	photo_gallery.init();
