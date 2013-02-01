@@ -61,6 +61,11 @@ $(document).ready(function(){
 			scroll_timer = setInterval(scroll_id, 6000); // adds autoscroller
 			
 		},
+		// this is to actually change the mini row on what is shown and hidden. 
+		scroll_miniset: function() {
+			// working
+		},
+		// takes in a mini id, turns it into an id, and changes the main picture to the miniID passed.
 		change_id: function(id) {
 			id = id.replace(/m/, '');
 			if (id != this.current_picture) {
@@ -72,6 +77,7 @@ $(document).ready(function(){
 			}
 		}
 	};
+	 // outside of object ^ because timers are finicky. 
 	function scroll_id() {
 		var id = photo_gallery.current_picture; // could use simplification, but works for  now.
 		var currset = photo_gallery.current_set+'_';
@@ -123,6 +129,10 @@ $(document).ready(function(){
 				<img src="images/photo/custo2013_1_2_small.png" class="set3" id="3_2" style="display:none;" />
 				<img src="images/photo/custo2013_1_3_small.png" class="set3" id="3_3" style="display:none;" />
 			</div>
+				<div id="photo_arrow_wrap">
+				<div id="photo_mini_next">
+					+
+				</div>
 			<div id="side_photo">
 				<div id="inner_side">
 					<img src="images/photo/custo2012_1_2_mini.png" class="set1 mini" id="m1_1" style="display:none;" />
@@ -139,6 +149,10 @@ $(document).ready(function(){
 					<img src="images/photo/custo2013_1_3_mini.png" class="set3 mini" id="m3_3" style="display:none;" />
 				</div>
 			</div>
+				<div id="photo_mini_prev">
+					-
+				</div>
+				</div>
 		</div>
 		<div id="photo_specs">
 			<div class="set1 det1" style="display:none;">

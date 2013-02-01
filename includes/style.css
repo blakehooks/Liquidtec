@@ -499,17 +499,34 @@ a.nav_items:active {
 	-webkit-box-shadow:1px 1px 4px #000000;
 	box-shadow:1px 1px 4px #000000;
 }
+#photo_arrow_wrap {
+	height:132px;
+	position:relative;
+	width:652px;
+	top:30px;
+}
+#photo_mini_next {
+	background-color:#c1c1c1;
+	position:absolute;
+	right:0px;
+}
+#photo_mini_prev {
+	background-color:#c1c1c1;
+	position:absolute;
+	left:0px;
+}
 #side_photo {
-	height:130px;
+	height:132px;
 	width:602px;
 	background-color:#c1c1c1;
+	margin-right:auto;
+	margin-left:auto;
 	position:relative;
-	top:30px;
 	overflow-x:hidden;
 }
 #inner_side {
 	position:absolute;
-	height:125px;
+	height:132px;
 	width:602px;
 }
 #inner_side img {
@@ -567,6 +584,7 @@ a.nav_items:active {
 	left:0px;
 	background-color:#f8f8f8;
 }
+
 
 /* other tables */
 
