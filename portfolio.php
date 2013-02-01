@@ -13,6 +13,7 @@ $(document).ready(function(){
 		set_size: 0,
 		current_set: 0,
 		current_picture: 0,
+		current_mini_slide: 0,
 		init: function() {
 			this.count_set();
 			if (this.total_set > 0) { // checks to see if there are any sets
@@ -50,7 +51,7 @@ $(document).ready(function(){
 					$('#m'+this.current_set+'_'+i).fadeIn(1000);
 				}
 				i *= 200;
-				$("#inner_side").css("width", i);
+				$('#inner_side').css("width", i);
 
 			$('#'+this.current_set+'_1').fadeIn(1000); // shows the first image on the main slider.
 			$('#m'+this.current_set+'_1').css('border', 'solid 2px #f8f8f8');
@@ -62,8 +63,16 @@ $(document).ready(function(){
 			
 		},
 		// this is to actually change the mini row on what is shown and hidden. 
-		scroll_miniset: function() {
-			// working
+		scroll_miniset: function(offset) {
+			var max = -($('#inner_side').width());
+				this.current_mini_slide += offset;
+				if (this.current_mini_slide < this.max) {
+					this.current_mini_slide = this.max;
+				}
+				else if (this.current_mini_slide > this.min) {
+					this.current_mini_slide = this.min;
+				}
+			$('#inner_side').animate({left:this.current_mini_slide},1000);
 		},
 		// takes in a mini id, turns it into an id, and changes the main picture to the miniID passed.
 		change_id: function(id) {
@@ -72,7 +81,7 @@ $(document).ready(function(){
 				$('#'+this.current_picture).hide();
 				$('#m'+this.current_picture).css('border', '');
 				$('#'+id).fadeIn(1000);
-				$('#m'+id).css('border', 'solid 2px #f8f8f8');
+				$('#m'+id).css('border', 'solid 2px #21B6DB');
 				this.current_picture = id;
 			}
 		}
