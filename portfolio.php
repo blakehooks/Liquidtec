@@ -47,9 +47,10 @@ $(document).ready(function(){
 			}
 			this.set_size = ($('.set' + this.current_set).length - 2) / 2; // finds new set size
 			// ensures the small pictures will fit and shows amount accordingly.
-				for (i=0;i<this.set_size;i++) {
+				for (i=1;i<=this.set_size;i++) {
 					$('#m'+this.current_set+'_'+i).fadeIn(1000);
 				}
+				i -= 1; // subtracting 1 because the for statement leaves i one higher than it should.
 				i *= 200;
 				$('#inner_side').css("width", i);
 
