@@ -60,17 +60,18 @@ $(document).ready(function(){
 			$('.det'+this.current_set).fadeIn(1000); // changes the specs
 			clearInterval(scroll_timer);
 			scroll_timer = setInterval(scroll_id, 6000); // adds autoscroller
+			this.scroll_miniset(9000); // extraneous value only added to force it to reset to 0.
 			
 		},
 		// this is to actually change the mini row on what is shown and hidden. 
 		scroll_miniset: function(offset) {
 			var max = -($('#inner_side').width());
 				this.current_mini_slide += offset;
-				if (this.current_mini_slide < this.max) {
-					this.current_mini_slide = this.max;
+				if (this.current_mini_slide < max) {
+					this.current_mini_slide = max;
 				}
-				else if (this.current_mini_slide > this.min) {
-					this.current_mini_slide = this.min;
+				else if (this.current_mini_slide > 0) {
+					this.current_mini_slide = min;
 				}
 			$('#inner_side').animate({left:this.current_mini_slide},1000);
 		},
@@ -111,6 +112,12 @@ $(document).ready(function(){
 	$('.mini').click(function() {
 		photo_gallery.change_id(this.id);
 		clearInterval(scroll_timer);
+	});
+	$('#photo_mini_next').click(function() {
+		photo_gallery.scroll_miniset(-200);
+	});
+	$('#photo_mini_prev').click(function() {
+		photo_gallery.scroll_miniset(200);
 	});
 		
 });
