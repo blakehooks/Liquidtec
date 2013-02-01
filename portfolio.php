@@ -68,14 +68,20 @@ $(document).ready(function(){
 		scroll_miniset: function(offset) {
 			if (this.set_size > 3) {
 				var max = -($('#inner_side').width() - 600); // subtract sixhundred because the starting three are there.
-					this.current_mini_slide += offset;
-					if (this.current_mini_slide < max) {
-						this.current_mini_slide = max;
-					}
-					else if (this.current_mini_slide > 0) {
-						this.current_mini_slide = 0;
-					}
-				$('#inner_side').animate({left:this.current_mini_slide},500);
+				var nogo = 0;
+				this.current_mini_slide += offset;
+				if (this.current_mini_slide < max) {
+					this.current_mini_slide = max;
+				}
+				else if (this.current_mini_slide > 0) {
+					this.current_mini_slide = 0;
+				}
+				else if (this.current_mini_slide == 0 || this.current_mini_slide == max) {
+					nogo = 1;
+				}
+				if (nogo == 0) {
+					$('#inner_side').animate({left:this.current_mini_slide},500);
+				}
 			}
 		},
 		// takes in a mini id, turns it into an id, and changes the main picture to the miniID passed.
