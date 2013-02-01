@@ -105,10 +105,9 @@ $(document).ready(function(){
 		id = parseInt(id);
 		if (id >= photo_gallery.set_size) {
 			id = 0;
-			photo_gallery.scroll_miniset(-200); // changes the minibar to move forward with the picture - added here for maxes switched to min.
 		}
 		id++;
-		if (id > 3) {
+		if (id > 2) {
 			photo_gallery.scroll_miniset(-200); // changes the minibar to move forward with the picture.
 		}
 		id = photo_gallery.current_set+'_'+id;
