@@ -71,7 +71,7 @@ $(document).ready(function(){
 					this.current_mini_slide = max;
 				}
 				else if (this.current_mini_slide > 0) {
-					this.current_mini_slide = min;
+					this.current_mini_slide = 0;
 				}
 			$('#inner_side').animate({left:this.current_mini_slide},1000);
 		},
