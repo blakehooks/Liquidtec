@@ -133,6 +133,9 @@ $(document).ready(function(){
 				<div id="photo_mini_next">
 					+
 				</div>
+				<div id="photo_mini_prev">
+					-
+				</div>
 			<div id="side_photo">
 				<div id="inner_side">
 					<img src="images/photo/custo2012_1_2_mini.png" class="set1 mini" id="m1_1" style="display:none;" />
@@ -149,9 +152,6 @@ $(document).ready(function(){
 					<img src="images/photo/custo2013_1_3_mini.png" class="set3 mini" id="m3_3" style="display:none;" />
 				</div>
 			</div>
-				<div id="photo_mini_prev">
-					-
-				</div>
 				</div>
 		</div>
 		<div id="photo_specs">

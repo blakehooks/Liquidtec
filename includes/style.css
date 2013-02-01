@@ -502,18 +502,38 @@ a.nav_items:active {
 #photo_arrow_wrap {
 	height:132px;
 	position:relative;
-	width:652px;
+	width:662px;
 	top:30px;
 }
 #photo_mini_next {
+	width:35px;
+	height:132px;
 	background-color:#c1c1c1;
 	position:absolute;
 	right:0px;
+	top:0px;
+	
+	-moz-border-bottom-right-radius: 15px;
+	-moz-border-top-right-radius: 15px;
+	-webkit-border-bottom-right-radius: 15px;
+	-webkit-border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	border-top-right-radius: 15px;
 }
 #photo_mini_prev {
+	width:35px;
+	height:132px;
 	background-color:#c1c1c1;
 	position:absolute;
 	left:0px;
+	top:0px;
+	
+	-moz-border-bottom-left-radius: 15px;
+	-moz-border-top-left-radius: 15px;
+	-webkit-border-bottom-left-radius: 15px;
+	-webkit-border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	border-top-left-radius: 15px;
 }
 #side_photo {
 	height:132px;
