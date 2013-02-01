@@ -55,7 +55,7 @@ $(document).ready(function(){
 				$('#inner_side').css("width", i);
 
 			$('#'+this.current_set+'_1').fadeIn(1000); // shows the first image on the main slider.
-			$('#m'+this.current_set+'_1').css('border', 'solid 2px #f8f8f8');
+			$('#m'+this.current_set+'_1').css('border', 'solid 2px #21B6DB');
 			this.current_picture = this.current_set+'_1';
 			
 			$('.det'+this.current_set).fadeIn(1000); // changes the specs
@@ -101,11 +101,11 @@ $(document).ready(function(){
 			id = 0;
 		}
 		id++;
-		id = photo_gallery.current_set+'_'+id;
-		photo_gallery.change_id(id); // passes it to the thing to actually change it.
 		if (id > 3) {
 			photo_gallery.scroll_miniset(-200); // changes the minibar to move forward with the picture.
 		}
+		id = photo_gallery.current_set+'_'+id;
+		photo_gallery.change_id(id); // passes it to the thing to actually change it.
 	}
 	
 	photo_gallery.init();
