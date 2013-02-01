@@ -105,7 +105,7 @@ $(document).ready(function(){
 			photo_gallery.scroll_miniset(9000); // changes the minibar to move forward with the picture.
 		}
 		id++;
-		if (id > 2) {
+		if (id > 3) {
 			photo_gallery.scroll_miniset(-200); // changes the minibar to move forward with the picture.
 		}
 		id = photo_gallery.current_set+'_'+id;
