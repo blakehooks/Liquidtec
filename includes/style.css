@@ -353,29 +353,7 @@ a.nav_items:active {
 	padding: 20px;
 	margin: -20px -20px 50px -20px;
 	background-color: rgb(101, 194, 202);
-	background-image: -moz-linear-gradient(rgb(101, 194, 202),#f8f8f8);
-	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(101, 194, 202)), to(#f8f8f8));    
-	background-image: -webkit-linear-gradient(rgb(101, 194, 202), #f8f8f8);
-	background-image: -o-linear-gradient(rgb(101, 194, 202), #f8f8f8);
-	background-image: -ms-linear-gradient(rgb(101, 194, 202), #f8f8f8);
-	background-image: linear-gradient(rgb(101, 194, 202), #f8f8f8);
-		text-shadow: 0 1px 0 rgba(0,0,0,.5);        
-
-}
-
-#pricing-table #most-popular h3 {
-	background-color: #ddd;
-	background-image: -moz-linear-gradient(#eee,#ddd);
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#ddd));    
-	background-image: -webkit-linear-gradient(#eee, #ddd);
-	background-image: -o-linear-gradient(#eee, #ddd);
-	background-image: -ms-linear-gradient(#eee, #ddd);
-	background-image: linear-gradient(#eee, #ddd);
-	margin-top: -30px;
-	padding-top: 30px;
-	-moz-border-radius: 5px 5px 0 0;
-	-webkit-border-radius: 5px 5px 0 0;
-	border-radius: 5px 5px 0 0; 	
+	text-shadow: 0 1px 0 rgba(0,0,0,.5);        
 
 }
 
