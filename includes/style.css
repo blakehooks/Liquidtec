@@ -707,9 +707,18 @@ a.nav_items:active {
 }
 
 #extrabox {
-background:rgb(255, 255, 255);	
+	background:rgb(255, 255, 255);	
 }
 
+/* contact extra css */
+#contact_head {
+	font-family:'RobotoBlack', Tahoma, sans-serif;
+	font-size:28pt;
+	color:#65c2ca;
+	text-shadow: 5px 5px 0px #eee, 7px 7px 1px #707070;
+	margin-right:auto;
+	margin-left:auto;
+}
 
 
 

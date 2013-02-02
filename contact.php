@@ -4,8 +4,8 @@ include('includes/head.inc');
 $nav = 4;
 include('includes/nav.inc'); 
 ?>
-<h1>Contact Us</h1>
-				<h3>
+<span id="contact_head">Contact Us</span>
+<h3>
 	Estimates And Repairs</h3>
 <p>
 	Ivan Sevo<br />
