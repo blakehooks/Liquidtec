@@ -99,9 +99,24 @@ include('includes/nav.inc');
 <img src="images/liquidtec_load.gif" alt="loading" id="loadgif" style="margin-top:30px; margin-left:300px;" />
 <div id="slide_frame"></div>
 </div>
+<script type="text/javascript">
+$(document).ready(function(){
+var appear;
+	$(".panel").mouseover(function() {
+		appear = this.id+"_info"
+		$('#'+appear).show();
+	}).mouseout(function() { 
+		$('#'+appear).hide();
+	});
+});
+</script>
+
 <div id="mission">
 From <span class="blue">educating</span> and <span class="blue">consulting</span>, <span class="orange">customization</span> and <span class="orange">creation</span>, to <span class="green">diagnosis</span> and <span class="green">repair</span>; our expert team does it <span style="font-family:'RobotoCondensed', sans-serif;">all!</span>
 </div>
+<div class="panel_info" id="educate_info" style="display:none;">meowmeowmeow</div>
+<div class="panel_info" id="create_info"style="display:none;">createcreatecreate</div>
+<div class="panel_info" id="diagnose_info" style="display:none;">diagdiagdiag</div>
 <div id="option_arrows">
 <div id="arrow_left"></div>
 <div id="arrow_right"></div>
