@@ -104,9 +104,9 @@ $(document).ready(function(){
 var appear;
 	$(".panel").mouseover(function() {
 		appear = this.id+"_info"
-		$('#'+appear).show();
+		$('#'+appear).fadeIn(500);
 	}).mouseout(function() { 
-		$('#'+appear).hide();
+		$('#'+appear).fadeOut(500);
 	});
 });
 </script>
@@ -114,9 +114,6 @@ var appear;
 <div id="mission">
 From <span class="blue">educating</span> and <span class="blue">consulting</span>, <span class="orange">customization</span> and <span class="orange">creation</span>, to <span class="green">diagnosis</span> and <span class="green">repair</span>; our expert team does it <span style="font-family:'RobotoCondensed', sans-serif;">all!</span>
 </div>
-<div class="panel_info" id="educate_info" style="display:none;">meowmeowmeow</div>
-<div class="panel_info" id="create_info"style="display:none;">createcreatecreate</div>
-<div class="panel_info" id="diagnose_info" style="display:none;">diagdiagdiag</div>
 <div id="option_arrows">
 <div id="arrow_left"></div>
 <div id="arrow_right"></div>
@@ -136,6 +133,9 @@ From <span class="blue">educating</span> and <span class="blue">consulting</span
 		</div>
 	</div>
 </div>
+<div class="panel_info" id="educate_info" style="display:none;">educateeducateeducate/div>
+<div class="panel_info" id="create_info"style="display:none;">createcreatecreate</div>
+<div class="panel_info" id="diagnose_info" style="display:none;">diagdiagdiag</div>
 <div id="bottom_pin">
 </div>
 
