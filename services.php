@@ -4,7 +4,9 @@ include('includes/head.inc');
 $nav = 1;
 include('includes/nav.inc'); 
 ?>
-<h1>Package Services</h1>
+<div id="pricing_header">
+	Package Services <!-- added for blind/google -->
+</div>
 	<div id="pricing-table" class="clear">
 		<div class="plan">
 			<h3>Complete Repair Package<span>$75</span></h3>      

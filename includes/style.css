@@ -388,6 +388,13 @@ a.nav_items:active {
 
 /* --------------- */
 
+#pricing_header {
+	background-image:url('../images/packageservices_v3.png');
+	height:120px;
+	width:550px;
+	text-indent:-9999px;
+}
+
 #pricing-table ul {
 	margin: 20px 0 0 0;
 	padding: 0;
