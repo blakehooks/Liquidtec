@@ -51,8 +51,8 @@ include('includes/nav.inc');
 	</div>
 <br />
 
-<div id="repair_header" class="services_header">
-	Repair Services
+<div class="services_header" id="repair_header">
+	Repair Services <!-- added for blind/google -->
 </div>
 	
 <div id="buffer">
