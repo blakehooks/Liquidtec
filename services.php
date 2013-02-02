@@ -33,9 +33,6 @@ include('includes/nav.inc');
 			</ul> 
 		</div>
 
-
-
-
 		<div class="plan">
 			<h3>CustoHack (Hackintosh)<span>$125</span></h3>
 		   

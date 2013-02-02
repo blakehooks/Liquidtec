@@ -117,7 +117,7 @@ From <span class="blue">educating</span> and <span class="blue">consulting</span
 <div id="option_arrows">
 <div id="arrow_left"></div>
 <div id="arrow_right"></div>
-	<div id="option_slider">
+	<div id="option_slider" class="content_wrap_gray">
 		<div id="slide_panel">
 			<span class="panel" id="educate"></span>
 			<span class="ring"></span>
