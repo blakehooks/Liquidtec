@@ -391,6 +391,11 @@ a.nav_items:active {
 
 #pricing_header {
 	background-image:url('../images/packageservices_v3.png');
+}
+#repair_header {
+	background-image:url('../images/repairservices_v1.png');
+}
+.services_header {
 	height:120px;
 	width:550px;
 	text-indent:-9999px;
