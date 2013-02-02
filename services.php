@@ -240,12 +240,12 @@ include('includes/nav.inc');
            <p class="wat-link1">20KM Distance</p>
           </div>
           <div class="wat-line"></div>
-          <div class="money">$ 50</div>
+          <div class="money">$ 20</div>
      </div>
      
      <div class="wat-order">
          <div class="wat-name">
-           <p class="wat-link1">20KM Distance</p>
+           <p class="wat-link1">50KM Distance</p>
        </div>
           <div class="wat-line"></div>
           <div class="money">$ 50</div>
