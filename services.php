@@ -284,7 +284,7 @@ include('includes/nav.inc');
 	<br/>
 <!-- <p>
 	&nbsp;</p> -->
-
+<div id="extrabox">
 <h4>
 	Technology Consulting</h4>
 <p>
@@ -297,5 +297,5 @@ include('includes/nav.inc');
 	We pride ourselves on our service. Plain and simple. If we can&#39;t resolve the issue, you don&#39;t pay*</p>
 <p>
 We also strive to remain competitive. If you find a less expensive advertised price; we&#39;ll beat it! Just bring us the ad.</p>
-
+</div>
 <?php include('includes/foot.inc');?>
