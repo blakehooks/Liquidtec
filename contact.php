@@ -5,22 +5,24 @@ $nav = 4;
 include('includes/nav.inc'); 
 ?>
 <span id="contact_head">Contact Us!</span>
-<div class="content_wrap_gray" id="contact_wrap">
-	<h3>
-		Estimates And Repairs</h3>
-	<p>
-		Ivan Sevo<br />
+<div id="contact_wrap">
+
+
+	<h3 class="contact_item_head">Estimates And Repairs</h3>
+		<h2 class="contact_name">Ivan Sevo</h2>
 		Sales &amp; Marketing Director, LiquidTec<br />
 		Call: 519-588-8682<br />
 		E-mail: liquidtec-support@outlook.com<br />
-		&nbsp;</p>
-	<h3>
-		Custom Builds And Hackintosh</h3>
-	<p>
-		Sasa Rajic<br />
-		Head Technican, LiquidTec<br />
-		Call: 519-897-9277<br />
-		E-mail: liquidtec@outlook.com</p>
+		
+		
+		
+		<h3 class="contact_item_head">Custom Builds And Hackintosh</h3>
+			<h2 class="contact_name">Sasa Rajic<br />
+			Head Technican, LiquidTec<br />
+			Call: 519-897-9277<br />
+			E-mail: liquidtec@outlook.com
+	
+	
 	<p>
 		Serving the Kitchener-Waterloo/Cambridge Area Since 2004</p>
 </div>
