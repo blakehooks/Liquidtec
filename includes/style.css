@@ -166,7 +166,13 @@ a.nav_items:active {
 	padding-bottom:10px;
 	
 }
-
+.panel_info {
+	position:absolute;
+	left:50px;
+	height:100px;
+	width:350px;
+	font-size:16pt;
+}
 #option_slider {
 	width:960px;
 	margin-left:auto;

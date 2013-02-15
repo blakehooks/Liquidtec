@@ -132,10 +132,10 @@ From <span class="blue">educating</span> and <span class="blue">consulting</span
 			<span class="panel" id="diagnose"></span>
 		</div>
 	</div>
+	<div class="panel_info" id="educate_info" style="display:none;">educateeducateeducate</div>
+	<div class="panel_info" id="create_info"style="display:none;">createcreatecreate</div>
+	<div class="panel_info" id="diagnose_info" style="display:none;">diagdiagdiag</div>
 </div>
-<div class="panel_info" id="educate_info" style="display:none;">educateeducateeducate</div>
-<div class="panel_info" id="create_info"style="display:none;">createcreatecreate</div>
-<div class="panel_info" id="diagnose_info" style="display:none;">diagdiagdiag</div>
 <div id="bottom_pin">
 </div>
 
