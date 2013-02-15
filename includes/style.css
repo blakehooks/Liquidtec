@@ -169,9 +169,17 @@ a.nav_items:active {
 .panel_info {
 	position:absolute;
 	left:50px;
-	height:100px;
-	width:350px;
+	top:0px;
+	height:75px;
+	width:150px;
 	font-size:16pt;
+	z-index:5;
+	padding:10px;
+
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	
 }
 #option_slider {
 	width:960px;
