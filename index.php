@@ -104,9 +104,9 @@ $(document).ready(function(){
 var appear;
 	$(".panel").mouseover(function() {
 		appear = this.id+"_info"
-		$('#'+appear).delay(300).fadeIn(500);
+		$('#'+appear).fadeIn(300);
 	}).mouseout(function() { 
-		$('#'+appear).delay(300).fadeOut(500);
+		$('#'+appear).fadeOut(300);
 	});
 });
 </script>
